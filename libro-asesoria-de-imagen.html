@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        @font-face {
+            font-family: rajdhani;
+            src: url(fonts/Rajdhani-Regular.ttf) format("truetype");
+            font-family: rajdhani, Helvetica, sans-serif;
+        }
+
+        /* Estilos para responsividade */
+        @media (max-width: 768px) {
+            nav {
+                display: block;
+                text-align: center;
+            }
+
+            .social-media {
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
+            }
+
+            .input-top,
+            .input-footer {
+                width: 100%;
+                margin: 5px 0;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .texto-home {
+                font-size: 1.5em;
+            }
+
+            section.section-home,
+            article {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-media {
+                width: 25px;
+                height: 25px;
+            }
+
+            .texto-home {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-info">
+            <p>Sanarate, El Progreso - Guatemala</p>
+            <p>
+                <a class="information-top" href="tel:+50255135773"><img src="image/telefone.png" class="social-media-telefone" alt="telefone"> (502) 5513-5773</a>
+            </p>
+            
+                <a class="information-top" href="https://facebook.com"><img class="social-media" src="image/facebook-icon.ico" alt="facebook"></a>
+                <a class="information-top" href="https://instagram.com"><img class="social-media" src="image/instagram-logo.png" alt="instagram"></a>
+                <a class="information-top" href="https://twitter.com"><img class="social-media" src="image/twitter.webp" alt="x"></a>
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <p>María Grande</p>
+        </div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="mariagrande.html">Asesoria de imagen</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactos.html">Contacto</a>
+        </div>
+        <input class="input-top" type="text" id="search" name="search" placeholder="Buscar..." autocomplete="off">
+        <ul id="suggestions" class="suggestions-list"></ul>
+    </nav>
+
+
+    <main>
+
+
+        <div id="asesoria-de-image-book">
+            <div class="content-wrapper">
+              <div class="image-container">
+                <img src="image/libros-digitales/consultoria-de-image.jpg" alt="Consultoria de Image" />
+              </div>
+              <div class="text-container">
+                <h2>CONVIERTETE EN UN EXPERTO EN IMAGEN : ASESORIA DE IMAGEN (Spanish Edition)</h2>
+                <p>ASESORIA DE IMAGEN Y PERSONAL SHOPPER CREA TU PROPIO FONDO DE ARMARIO Y VISTE COMO CELEBRITY.</p>
+                <p class="price">US$1.00</p>
+                <a href="https://www.amazon.com/-/es/LOOKAT-ME-ebook/dp/B08PDS2Q4T" target="_blank"><button class="buy-button">
+                    <i class="fas fa-shopping-cart"></i> Comprar
+                  </button></a>
+                  
+                
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+
+
+
+
+        <a href="https://www.instagram.com/celestitch_?igsh=dnU5ZjczNWVkNXhp" target="_blank"><img src="image/icon-footer/instagram.png" alt="instagram-icon" id="imagem-fixada">
+        </a>
+        <a href="#" target="_blank"><img src="image/icon-footer/twitter.png" alt="twitter-icon" id="imagem-fixada-2">
+        
+        </a>
+    
+        <a href="https://wa.me/+50255135773" target="_blank"><img src="image/icon-footer/whatssap.png" alt="whatssap" id="imagem-fixada-3">
+        
+        </a>
+
+
+    </main>
+
+    <footer>
+        <p>© 2025 María Grande | Consultoria de Imagem e Estilo</p>
+        <a href="#">Política de Privacidade</a>
+    </footer>
+    
+    
+    <script src="asesoria-maria.js"></script>
+    
+</body>
+</html>

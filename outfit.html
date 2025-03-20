@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @font-face {
+            font-family: rajdhani;
+            src: url(fonts/Rajdhani-Regular.ttf) format("truetype");
+            font-family: rajdhani, Helvetica, sans-serif;
+        }
+
+        /* Estilos para responsividade */
+        @media (max-width: 768px) {
+            nav {
+                display: block;
+                text-align: center;
+            }
+
+            .social-media {
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
+            }
+
+            .input-top,
+            .input-footer {
+                width: 100%;
+                margin: 5px 0;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .texto-home {
+                font-size: 1.5em;
+            }
+
+            section.section-home,
+            article {
+                text-align: center;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        @media (max-width: 480px) {
+            .social-media {
+                width: 25px;
+                height: 25px;
+            }
+
+            .texto-home {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="header-info">
+            <p>Sanarate, El Progreso - Guatemala</p>
+            <p>
+                <a class="information-top" href="tel:+50255135773"><img src="image/telefone.png" class="social-media-telefone" alt="telefone"> (502) 5513-5773</a>
+            </p>
+            
+                <a class="information-top" href="https://facebook.com"><img class="social-media" src="image/facebook-icon.ico" alt="facebook"></a>
+                <a class="information-top" href="https://instagram.com"><img class="social-media" src="image/instagram-logo.png" alt="instagram"></a>
+                <a class="information-top" href="https://twitter.com"><img class="social-media" src="image/twitter.webp" alt="x"></a>
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <p>María Grande</p>
+        </div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="mariagrande.html">Asesoria de imagen</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactos.html">Contacto</a>
+        </div>
+        <input class="input-top" type="text" id="search" name="search" placeholder="Buscar..." autocomplete="off">
+        <ul id="suggestions" class="suggestions-list"></ul>
+    </nav>
+
+
+    <main>
+
+        <div class="outfit">
+            <div class="outfit-content">
+              <img src="image/outfit/mulher-de-verde-2.jpg" alt="" class="outfit-img">
+              <div class="description-outfit">
+                <a href="3-consejos.html"><h2 class="title-outfit">¡3 consejos para multiplicar los outfit de tu armario con los que ya tienes!</h2>
+                <p class="paragraph-outfit">¿Eres de esas personas que siempre usa una prenda de la misma manera? ¡La mayoría de la gente tiene esta queja! Por eso te quiero...</p></a>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="noticias-tendencias">Mais novas</h1>
+
+          <div class="post-noticias">
+
+            <div class="noticias-tendencias">
+                <div class="img-noticias">
+                  <div class="imagem-item">
+                    <a href="tendencia-jeans.html">
+                      <img class="img-tendencias" src="image/outfit/tendencia-jeans-2025.jpg" alt="">
+                      <h3 class="titulo-outfit">Rompiendo la tendencia de los jeans sobre jeans</h3>
+                      <p class="descricao-outfit">¿Alguna vez te has encontrado pensando en cómo usar jeans con jeans y tenías miedo de armar outfits? Si es así, es hora de dejar esto...</p>
+                    </a>
+                  </div>
+                  <div class="imagem-item">
+                    <a href="3-pasos-iniciales.html">
+                      <img class="img-tendencias" src="image/outfit/mulheres-gravidas.jpg" alt="">
+                      <h3 class="titulo-outfit">3 pasos iniciales para reencontrarte contigo misma después de la maternidad.</h3>
+                      <p class="descricao-outfit">Por María Grande ¿Te has convertido en madre y sientes que has “perdido” tu estilo? Aquí te presento 3 pasos iniciales para reencontrarte contigo mismo</p>
+                    </a>
+                  </div>
+                  <div class="imagem-item">
+                    <a href="link3.html">
+                      <img class="img-tendencias" src="image/outfit/tendencias-oscar-2024.jpg" alt="">
+                      <h3 class="titulo-outfit">5 tendencias en la alfombra roja de los Oscar 2024</h3>
+                      <p class="descricao-outfit">Como de costume, as celebridades reservaram seus melhores looks para o tapete vermelho do Oscar 2024. O resultado foi um tapete</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              
+
+              <div class="noticias-tendencias">
+                <div class="img-noticias">
+                  <div class="imagem-item">
+                    <a href="link1.html">
+                      <img class="img-tendencias" src="image/outfit/muher-vestida-seda.jpg" alt="">
+                      <h3 class="titulo-outfit">¿Qué podemos aprovechar de la Alta Costura para la moda “que le gusta a la gente”?</h3>
+                      <p class="descricao-outfit">Por María Grande Algunas personas ven desfiles de Alta Costura y piensan: “Dios mío, ¿no me pondría eso?</p>
+                    </a>
+                  </div>
+                  
+                  <div class="imagem-item">
+                    <a href="link2.html">
+                      <img class="img-tendencias" src="image/outfit/cor-pantone.jpg" alt="">
+                      <h3 class="titulo-outfit">3Peach Fuzz: el color Pantone de 2024</h3>
+                      <p class="descricao-outfit">Ya salió, ¿eh? Esta época del año está marcada por las retrospectivas, pero también es momento de descubrir qué color dice Pantone que será.</p>
+                    </a>
+                  </div>
+                  <div class="imagem-item">
+                    <a href="link3.html">
+                      <img class="img-tendencias" src="image/outfit/home-de-bolsa.jpg" alt="">
+                      <h3 class="titulo-outfit">¿Los hombres usan bolsos? ¡Por supuesto!</h3>
+                      <p id="image-two" class="descricao-outfit">Una vez finalizadas las semanas de la moda masculina, se empiezan a trazar las líneas para establecer nuevas tendencias</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+
+
+
+              <div class="noticias-tendencias">
+                <div class="img-noticias">
+                  <div class="imagem-item">
+                    <a href="link1.html">
+                      <img class="img-tendencias" src="image/outfit/cabelo-cacheado.jpg" alt="">
+                      <h3 class="titulo-outfit">¿Sabes lo que tu cabello dice de ti?</h3>
+                      <p class="descricao-outfit">Al igual que la ropa, nuestro cabello se compone de líneas, formas, colores, volúmenes y texturas. La suma de estas características</p>
+                    </a>
+                  </div>
+                  
+                  <div class="imagem-item">
+                    <a href="link2.html">
+                      <img class="img-tendencias" src="image/outfit/cores-frias-quentes.jpg" alt="">
+                      <h3 class="titulo-outfit">¿Qué son los colores fríos y los colores cálidos?</h3>
+                      <p class="descricao-outfit">¿Hablemos de colores cálidos y colores fríos? En el círculo cromático podemos ver una clara división de la mitad con colores cálidos.</p>
+                    </a>
+                  </div>
+                  <div class="imagem-item">
+                    <a href="link3.html">
+                      <img class="img-tendencias" src="image/outfit/cores-combinam-preto.jpg" alt="">
+                      <h3 class="titulo-outfit">Colores que combinan con el negro.</h3>
+                      <p class="descricao-outfit">El negro es uno de los colores más controvertidos del mundo. Empezando por el hecho de que el negro ni siquiera es un color, sino más bien la ausencia de</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="main-box-videos">
+                <div class="video-container">
+                    <div class="video-box">
+                        <iframe src="https://www.youtube.com/embed/r6EZ-AeFoSw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3 class="video-title">7 MEJORES TIPS DE VESTIR</h3>
+                    </div>
+                    <div class="video-box">
+                        <iframe src="https://www.youtube.com/embed/ReDcu52AqqA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3 class="video-title">TODAS LAS COLORIMENTRIAS ESPECIAL, CALIDAS Y NEUTRAS </h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <h1 class="noticias-tendencias">
+                MASCULINO</h1>
+
+
+
+
+
+                <div class="noticias-tendencias">
+                    <div class="img-noticias">
+                      <div class="imagem-item">
+                        <a href="link1.html">
+                          <img class="img-tendencias" src="image/outfit/homem-acessorios.jpg" alt="">
+                          <h3 class="titulo-outfit">Complementos para hombre: ¡súmate a esta tendencia!</h3>
+                          <p class="descricao-outfit">Vaqueros, una bonita camisa, unas zapatillas estupendas, pero no podemos reducir el look masculino a eso.</p>
+                        </a>
+                      </div>
+                      
+                      <div class="imagem-item">
+                        <a href="link2.html">
+                          <img class="img-tendencias" src="image/outfit/pai-filho.jpg" alt="">
+                          <h3 class="titulo-outfit">¿El padre de cada estilo.</h3>
+                          <p class="descricao-outfit">Quizás ya estés familiarizado con los estilos universales, que no son más que una base que reúne elementos visuales,</p>
+                        </a>
+                      </div>
+                      <div class="imagem-item">
+                        <a href="link3.html">
+                          <img class="img-tendencias" src="image/outfit/homem-smoker.jpg" alt="">
+                          <h3 class="titulo-outfit">Las diferencias entre traje, esmoquin, frac.</h3>
+                          <p class="descricao-outfit">¿Conoces las diferencias entre traje (de dos o tres piezas), esmoquin, frac, medio frac y abrigo? Mucha gente</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <h1 class="noticias-tendencias">
+                    TENDENCIAS</h1>
+
+
+
+                    <div class="noticias-tendencias">
+                        <div class="img-noticias">
+                          <div class="imagem-item">
+                            <a href="link1.html">
+                              <img class="img-tendencias" src="image/outfit/tendencia-body-chain.jpg" alt="">
+                              <h3 class="titulo-outfit">Descubre la tendencia Body Chain</h3>
+                              <p class="descricao-outfit">Si te paras a pensar en algún complemento estiloso que pueda contribuir a la composición de cualquier look, seguro que pensarás...</p>
+                            </a>
+                          </div>
+                          
+                          <div class="imagem-item">
+                            <a href="link2.html">
+                              <img class="img-tendencias" src="image/outfit/tendencia-balletcore.jpg" alt="">
+                              <h3 class="titulo-outfit">¡Tendencia balletcore!</h3>
+                              <p class="descricao-outfit">Balletcore recupera el body, las bailarinas, los cardigans, las blusas anudadas, los tules e incluso las bailarinas.</p>
+                            </a>
+                          </div>
+                          <div class="imagem-item">
+                            <a href="link3.html">
+                              <img class="img-tendencias" src="image/outfit/tendencias-oscar-2023.jpg" alt="">
+                              <h3 class="titulo-outfit">¿Qué tendencias ganaron los Oscar 2023?</h3>
+                              <p class="descricao-outfit">Los Oscar 2023 se llevaron a cabo este pasado fin de semana y, además de los premios, los looks presentados también fueron lo más destacado de la celebración.</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+                      <div class="container-about">
+                        <!-- Coluna esquerda - "Fale Comigo" -->
+                        <div class="left">
+                          <h3>Háblame</h3>
+                          <p>¿Tiene alguna pregunta? Para obtener más <br>
+                            información, hacer sugerencias o hacer preguntas.</p>
+                        </div>
+                        
+                        <!-- Coluna direita - Formulário -->
+                        <div class="right">
+                          <form>
+                            <label for="nome">Tu nombre (requerido)</label>
+                            <input type="text" id="nome" name="nome" required />
+                            
+                            <label for="telefone">Tu número de teléfono (requerido)</label>
+                            <input type="tel" id="telefone" name="telefone" required />
+                            
+                            <label for="email">Tu correo electrónico (requerido)</label>
+                            <input type="email" id="email" name="email" required />
+                            
+                            <label for="assunto">Asunto (requerido)</label>
+                            <input type="text" id="assunto" name="assunto" required />
+                            
+                            <label for="mensagem">Tu mensaje</label>
+                            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                            
+                            <button type="submit">Enviar</button>
+                          </form>
+                        </div>
+                      </div>
+                      
+    
+
+
+
+                
+
+
+    
+
+
+                
+          
+
+
+
+
+        <a href="https://www.instagram.com/celestitch_?igsh=dnU5ZjczNWVkNXhp" target="_blank"><img src="image/icon-footer/instagram.png" alt="instagram-icon" id="imagem-fixada">
+        </a>
+        <a href="#" target="_blank"><img src="image/icon-footer/twitter.png" alt="twitter-icon" id="imagem-fixada-2">
+        
+        </a>
+    
+        <a href="https://wa.me/+50255135773" target="_blank"><img src="image/icon-footer/whatssap.png" alt="whatssap" id="imagem-fixada-3">
+        
+        </a>
+    </main>
+
+    <footer>
+        <p>© 2025 María Grande | Consultoria de Imagem e Estilo</p>
+        <a href="#">Política de Privacidade</a>
+    </footer>
+
+    <script src="asesoria-maria.js"></script>
+    
+</body>
+</html>

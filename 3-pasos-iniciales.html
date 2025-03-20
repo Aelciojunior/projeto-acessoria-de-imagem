@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 pasos iniciales</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+
+body{
+    overflow-x: hidden;
+
+
+    
+}
+
+.tendencia-jeans-h1{
+    width: 100%;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-size: 2.3em;  /* Aumenta o tamanho do título */
+    margin-bottom: 20px;  /* Espaço abaixo do título */
+    
+}
+
+
+.paragrafo-jeans-sobre-jeans{
+    width: 100%;
+    font-size: 1.2em;  /* Tamanho da fonte */
+    line-height: 1.5;  /* Aumenta o espaçamento entre as linhas do parágrafo */
+    margin-bottom: 20px;  /* Espaço entre os parágrafos */
+    text-align: justify;  /* Alinha o texto de forma justificada */
+}
+
+
+
+
+.mulher-tendencias {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    overflow: hidden; /* Oculta o conteúdo fora do contêiner */
+    margin-bottom: 50px;
+}
+
+.image-container-tendencias {
+    position: relative;
+    width: 100%; /* O contêiner ocupa 100% da largura disponível */
+    height: 400px; /* Defina uma altura fixa para todas as imagens */
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+.tendencias-img {
+    width: 150%; /* Aumenta a largura da imagem para 150% do tamanho do contêiner */
+    height: 100%; /* Garantindo que a altura seja 100% do contêiner */
+    object-fit: cover; /* Preenche o espaço sem distorcer a imagem */
+    transition: transform 0.5s ease-in-out; /* Transição suave */
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.seta-direita {
+    right: 10px;
+}
+
+.seta-esquerda {
+    left: 10px;
+}
+
+
+
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Ajustando o tamanho da fonte para telas menores */
+    .tendencia-jeans-h1 {
+        font-size: 1.8em;
+    }
+
+    .paragrafo-jeans-sobre-jeans {
+        font-size: 1em;  /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    /* Ajustando o tamanho da imagem e a navegação para telas menores */
+    .image-container-tendencias {
+        height: 300px; /* Reduz a altura das imagens em telas menores */
+    }
+
+    .tendencias-img {
+        width: 160%; /* Aumenta um pouco a largura para que as imagens ainda sejam visíveis */
+    }
+
+    /* Ajuste no tamanho das setas para telas pequenas */
+    .seta {
+        font-size: 25px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustando ainda mais para dispositivos muito pequenos */
+    .tendencia-jeans-h1 {
+        font-size: 1.5em;  /* Diminui ainda mais o tamanho do título */
+    }
+
+    .paragrafo-jeans-sobre-jeans {
+        font-size: 0.9em;  /* Reduz o tamanho da fonte */
+    }
+
+    .image-container-tendencias {
+        height: 250px; /* Mais redução na altura das imagens em telas muito pequenas */
+    }
+
+    .tendencias-img {
+        width: 170%; /* Aumenta a largura da imagem ainda mais em telas muito pequenas */
+    }
+
+    .seta {
+        font-size: 20px; /* Diminui o tamanho das setas para telas menores */
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+        @font-face {
+            font-family: rajdhani;
+            src: url(fonts/Rajdhani-Regular.ttf) format("truetype");
+            font-family: rajdhani, Helvetica, sans-serif;
+        }
+
+        /* Estilos para responsividade */
+        @media (max-width: 768px) {
+            nav {
+                display: block;
+                text-align: center;
+            }
+
+            .social-media {
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
+            }
+
+            .input-top,
+            .input-footer {
+                width: 100%;
+                margin: 5px 0;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .texto-home {
+                font-size: 1.5em;
+            }
+
+            section.section-home,
+            article {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-media {
+                width: 25px;
+                height: 25px;
+            }
+
+            .texto-home {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="header-info">
+            <p>Sanarate, El Progreso - Guatemala</p>
+            <p>
+                <a class="information-top" href="tel:+50255135773"><img src="image/telefone.png" class="social-media-telefone" alt="telefone"> (502) 5513-5773</a>
+            </p>
+            
+                <a class="information-top" href="https://facebook.com"><img class="social-media" src="image/facebook-icon.ico" alt="facebook"></a>
+                <a class="information-top" href="https://instagram.com"><img class="social-media" src="image/instagram-logo.png" alt="instagram"></a>
+                <a class="information-top" href="https://twitter.com"><img class="social-media" src="image/twitter.webp" alt="x"></a>
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <p>María Grande</p>
+        </div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="mariagrande.html">Asesoria de imagen</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactos.html">Contacto</a>
+        </div>
+        <input class="input-top" type="text" id="search" name="search" placeholder="Buscar..." autocomplete="off">
+        <ul id="suggestions" class="suggestions-list"></ul>
+    </nav>
+
+
+
+    <main>
+        
+        <div class="main-consejos">
+            <div class="text-content">
+                <h1 class="tendencia-jeans-h1">
+                    3 pasos iniciales para reencontrarte contigo misma después de la maternidad.
+                </h1>
+                
+                <p class="paragrafo-jeans-sobre-jeans" >
+                    Por María Grande <br> <br>
+
+
+                    ¿Te has convertido en madre y sientes que has “perdido” tu estilo? Aquí te presento 3 pasos iniciales para reencontrarte contigo misma después de la maternidad. <br> <br>
+
+
+                    Cualquier cambio en nuestra vida exige una renovación de nuestra imagen, ya sea para seguir el ritmo de la nueva rutina o de los nuevos deseos. En la maternidad no es diferente. Este, quizás, sea el mayor cambio en la vida de la mujer que elige vivir esto. Y con ello, vienen algunos (varios) desarrollos nuevos que cambian nuestra percepción de vestir y, en cierto modo, pueden sofocar nuestros estilos frente a nuestro “nuevo mundo”.
+
+                </p>
+            
+                
+            
+                
+
+
+                <div class="mulher-tendencias">
+                    <div class="image-container-tendencias">
+                        <img class="tendencias-img primeira-imagem" src="image/outfit/mulher-gravida-2.jpg" alt="">
+                        <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('primeira')">&#8592;</div>
+                        <div class="seta seta-direita" onclick="rolarImagemDireita('primeira')">&#8594;</div>
+                    </div>
+                </div>
+                
+                <p class="paragrafo-jeans-sobre-jeans">
+                    ¿Y qué relevancia tiene esto dada la grandeza de crear una vida, colocar a una persona en el mundo y dedicarse a ella? Esto es lo que te cuento aquí: <br> <br>
+
+
+
+                    La sensación de estar perdido frente al espejo, después de tantos cambios (de rutina, de prioridades, de cuerpo, de deseos), afecta mucho nuestra autoestima. La forma en que nos vemos a nosotros mismos es muy importante para sentirnos bien, seguros y cuando está en conflicto, nuestro bienestar se ve directamente afectado.
+                </p><br>
+                
+                
+                
+                <div class="mulher-tendencias">
+                    <div class="image-container-tendencias">
+                        <img class="tendencias-img segunda-imagem" src="image/outfit/mulher-gravida-3.jpg" alt="">
+                        <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('segunda')">&#8592;</div>
+                        <div class="seta seta-direita" onclick="rolarImagemDireita('segunda')">&#8594;</div>
+                    </div>
+                </div>
+                
+                <p class="paragrafo-jeans-sobre-jeans">
+                    Sabemos lo difícil que es, inicialmente, separar la figura de la Madre del Tú individual y la mayoría de las mujeres se sienten perdidas en términos de vestimenta y estilo personal después de la maternidad, especialmente en los primeros años de experimentar esto de primera mano. Ya sea en la búsqueda de comodidad, de practicidad, de priorizar la vida de otra persona antes que la propia… el resultado es básicamente el mismo: una persona en conflicto sin reconocerse en lo que viste. <br> <br>
+
+
+                    ¿Y cómo recuperar tu confianza y estilo? Te traigo algunos ejercicios que puedes empezar ahora mismo.
+
+
+
+                </p>
+                
+                <div class="mulher-tendencias">
+                    <div class="image-container-tendencias">
+                        <img class="tendencias-img terceira-imagem" src="image/outfit/mexendo-no-celular.jpg" alt="">
+                        <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('terceira')">&#8592;</div>
+                        <div class="seta seta-direita" onclick="rolarImagemDireita('terceira')">&#8594;</div>
+                    </div>
+                </div>
+                
+                
+
+            <p class="paragrafo-jeans-sobre-jeans">
+
+                Paso 1: Abre tu galería de fotos y busca fotos en las que te sentiste bien, hermosa y feliz con lo que vestiste. Marca como favorita tus fotos favoritas con las piezas que volverías a usar y descarta mentalmente aquellas que ya no te representan.
+            </p>
+            <br>
+
+            
+
+            
+
+            <div class="mulher-tendencias">
+                <div class="image-container-tendencias">
+                    <img class="tendencias-img quarta-imagem" src="image/outfit/gravida-roupa-de-frio-2.jpg" alt="">
+                    <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('quarta')">&#8592;</div>
+                    <div class="seta seta-direita" onclick="rolarImagemDireita('quarta')">&#8594;</div>
+                </div>
+            </div>
+            
+
+            <p class="paragrafo-jeans-sobre-jeans">
+                Paso 2: descarga la aplicación Pinterest y crea tu propio tablero. Luego busca looks inspiradores que conecten contigo hoy, con cómo te gustaría vestirte. Sigue llenando tu carpeta con las imágenes que más te representan. Esto ayuda a entrenar tu ojo en tus preferencias.
+            </p> <br>
+
+            
+
+
+            <div class="mulher-tendencias">
+                <div class="image-container-tendencias">
+                    <img class="tendencias-img quinta-imagem" src="image/outfit/modo-gestante-3.jpg" alt="">
+                    <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('quinta')">&#8592;</div>
+                    <div class="seta seta-direita" onclick="rolarImagemDireita('quinta')">&#8594;</div>
+                </div>
+            </div>
+
+           <p class="paragrafo-jeans-sobre-jeans">
+
+            Paso 3: Aunque vayas a salir poco y sólo por compromisos de “mamá”, siempre que tengas la oportunidad intenta vestirte elegante. Esto mejora tu autoestima, recupera poco a poco tus estilos latentes y te recuerda lo bueno que es sentirse uno mismo. <br> <br>
+
+
+            No parece mucho, pero notarás que ya marca la diferencia en la forma en que te ves a ti mismo en este nuevo momento. Y esto es, poco a poco, despertar y rescatar tus estilos internos. <br> <br>
+
+
+            La maternidad es fantástica pero no te define ni debe limitarte en tu forma de vestir. Y si aún con este paso a paso aún sientes que te falta algo, cuenta con Asesoría de Imagen para ayudarte a redescubrirte a ti mismo, rescatando tu esencia. Nuestra mayor misión es tomar tu mano y guiarte en este viaje de reconexión contigo mismo.
+        </p><br>
+
+        
+
+            </div>
+        
+            <div class="image-right">
+                <img src="image/outfit/mulher-no-computador.jpg" alt="mujer-en-la-computadora">
+        
+                <!-- Novo título e parágrafo abaixo da imagem, na mesma coluna -->
+                <h3 class="title-consejos additional-title">Blog de moda</h3>
+                <p class="paragraph-consejos additional-paragraph">
+                    Image Consulting es un espacio democrático con infinitas posibilidades. Por eso, María Grande valoramos todas las etapas del proceso: desde el primer contacto hasta la ejecución del servicio con excelencia y, también, la creación de una red de intercambio de información que te ayudará a sacar el máximo rendimiento a tu consultoría en nuestro <b>Blog de Moda.</b>
+                </p> <br> 
+                <p class="paragraph-consejos additional-paragraph">
+                    Por eso creamos el María Blog, un blog de moda donde nuestras consultoras comparten consejos, enseñanzas y mucho contenido sobre todo el mundo de la asesoría de imagen. En nuestro archivo de post podrás encontrar textos sobre colores, tejidos, formas, tendencias, productos, estilo, moda, maquillaje, belleza, decoración y mucho, mucho más. ¡Ven a navegar por nuestro blog y desarrolla aún más tu mejor versión!
+                </p> <br> 
+
+
+
+        <a href="https://www.instagram.com/celestitch_?igsh=dnU5ZjczNWVkNXhp" target="_blank"><img src="image/icon-footer/instagram.png" alt="instagram-icon" id="imagem-fixada">
+        </a>
+        <a href="#" target="_blank"><img src="image/icon-footer/twitter.png" alt="twitter-icon" id="imagem-fixada-2">
+        
+        </a>
+    
+        <a href="https://wa.me/+50255135773" target="_blank"><img src="image/icon-footer/whatssap.png" alt="whatssap" id="imagem-fixada-3">
+        
+        </a>
+
+
+
+
+    </main>
+
+
+    <footer>
+        <p>© 2025 María Grande | Consultoria de Imagem e Estilo</p>
+        <a href="#">Política de Privacidade</a>
+    </footer>
+
+    <script src="asesoria-maria.js"></script>
+    
+</body>
+</html>

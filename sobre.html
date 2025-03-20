@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a história de Maria Grande, a fundadora da consultoria de imagem e estilo Maria Grande.">
+    <meta property="og:title" content="Sobre - Maria Grande Consultoria de Imagem e Estilo">
+    <meta property="og:description" content="Descubra a trajetória de Maria Grande e como ela fundou sua consultoria de imagem e estilo.">
+    <title>Sobre - Maria Grande - Assessoria de Imagem e Estilo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: rajdhani;
+            src: url(fonts/Rajdhani-Regular.ttf) format("truetype");
+            font-family: rajdhani, Helvetica, sans-serif;
+        }
+
+        body {
+            font-family: rajdhani, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+             }
+    
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav {
+                display: block;
+                text-align: center;
+            }
+
+            .social-media {
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
+            }
+
+            .input-top,
+            .input-footer {
+                width: 100%;
+                margin: 5px 0;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .texto-home {
+                font-size: 1.5em;
+            }
+
+            section.section-home,
+            article {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-media {
+                width: 25px;
+                height: 25px;
+            }
+
+            .texto-home {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-info">
+            <p>Sanarate, El Progreso - Guatemala</p>
+            <p>
+                <a class="information-top" href="tel:+50255135773"><img src="image/telefone.png" class="social-media-telefone" alt="telefone"> (502) 5513-5773</a>
+            </p>
+            
+                <a class="information-top" href="https://facebook.com"><img class="social-media" src="image/facebook-icon.ico" alt="facebook"></a>
+                <a class="information-top" href="https://instagram.com"><img class="social-media" src="image/instagram-logo.png" alt="instagram"></a>
+                <a class="information-top" href="https://twitter.com"><img class="social-media" src="image/twitter.webp" alt="x"></a>
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <p>María Grande</p>
+        </div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="mariagrande.html">Asesoria de imagen</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactos.html">Contacto</a>
+        </div>
+        <input class="input-top" type="text" id="search" name="search" placeholder="Buscar..." autocomplete="off">
+        <ul id="suggestions" class="suggestions-list"></ul>
+    </nav>
+
+    <main>
+        <div class="about-content">
+            <div class="about-info">
+                <img src="image/maria-celeste-sobre-2.png" alt="Maria Grande" class="about-image"/>
+                <div class="about-text">
+                    <h2>¿Quién soy yo?</h2>
+                    <p>Mi nombre es María Grande, soy asesora de imagen y estilo, apasionada por la moda y el poder transformador de la imagen personal. Mi camino comenzó en el año 2022, cuando decidí fundar mi propia consultoría, luego de una enriquecedora experiencia en reconocidas empresas del sector de la moda y la confección. Desde entonces, he ayudado a clientes a descubrir y mejorar su estilo personal, alineando su imagen con lo que más quieren transmitir al mundo.</p>
+        
+                    <h2>Mi visión</h2>
+                    <p>Mi trabajo va mucho más allá de la estética. Mi objetivo es entender profundamente quién eres, cuál es tu identidad y qué quieres comunicar con tu imagen. La asesoría de imagen es un viaje de autoconocimiento, donde aprendes a expresar tu estilo de una manera única y auténtica, sin renunciar a tu esencia.</p>
+        
+                    <h2>Cómo trabajo</h2>
+                    <p>Aquí trabajamos juntos para construir una imagen personal que sea fiel a tu personalidad y conecte con tus objetivos profesionales y personales. Ofrezco asesoramiento personalizado, que implica análisis de estilo, organización de vestuario, elección de looks e incluso orientación para eventos y entrevistas de trabajo.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+        
+        <div class="container-about">
+            <!-- Coluna esquerda - "Fale Comigo" -->
+            <div class="left">
+              <h3>Háblame</h3>
+              <p>¿Tiene alguna pregunta? Para obtener más <br>
+                información, hacer sugerencias o hacer preguntas.</p>
+            </div>
+            
+            <!-- Coluna direita - Formulário -->
+            <div class="right">
+              <form>
+                <label for="nome">Tu nombre (requerido)</label>
+                <input type="text" id="nome" name="nome" required />
+                
+                <label for="telefone">Tu número de teléfono (requerido)</label>
+                <input type="tel" id="telefone" name="telefone" required />
+                
+                <label for="email">Tu correo electrónico (requerido)</label>
+                <input type="email" id="email" name="email" required />
+                
+                <label for="assunto">Asunto (requerido)</label>
+                <input type="text" id="assunto" name="assunto" required />
+                
+                <label for="mensagem">Tu mensaje</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+          
+              
+        
+        
+        
+
+
+        <a href="https://www.instagram.com/celestitch_?igsh=dnU5ZjczNWVkNXhp" target="_blank"><img src="image/icon-footer/instagram.png" alt="instagram-icon" id="imagem-fixada">
+        </a>
+        <a href="#" target="_blank"><img src="image/icon-footer/twitter.png" alt="twitter-icon" id="imagem-fixada-2">
+        
+        </a>
+    
+        <a href="https://wa.me/+50255135773" target="_blank"><img src="image/icon-footer/whatssap.png" alt="whatssap" id="imagem-fixada-3">
+        
+        </a>
+        
+    </main>
+
+    <footer>
+        <p>© 2025 María Grande | Consultoria de Imagem e Estilo</p>
+        <a href="#">Política de Privacidade</a>
+    </footer>
+    <script src="asesoria-maria.js"></script>
+
+</body>
+
+</html>

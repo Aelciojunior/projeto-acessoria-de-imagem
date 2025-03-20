@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendencia jeans sobre jeans</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+
+body{
+    overflow-x: hidden;
+
+
+    
+}
+
+.tendencia-jeans-h1{
+    width: 100%;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-size: 2.3em;  /* Aumenta o tamanho do título */
+    margin-bottom: 20px;  /* Espaço abaixo do título */
+    
+}
+
+
+.paragrafo-jeans-sobre-jeans{
+    width: 100%;
+    font-size: 1.2em;  /* Tamanho da fonte */
+    line-height: 1.5;  /* Aumenta o espaçamento entre as linhas do parágrafo */
+    margin-bottom: 20px;  /* Espaço entre os parágrafos */
+    text-align: justify;  /* Alinha o texto de forma justificada */
+}
+
+
+
+
+.mulher-tendencias {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    overflow: hidden; /* Oculta o conteúdo fora do contêiner */
+    margin-bottom: 50px;
+}
+
+.image-container-tendencias {
+    position: relative;
+    width: 100%; /* O contêiner ocupa 100% da largura disponível */
+    height: 400px; /* Defina uma altura fixa para todas as imagens */
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+.tendencias-img {
+    width: 150%; /* Aumenta a largura da imagem para 150% do tamanho do contêiner */
+    height: 100%; /* Garantindo que a altura seja 100% do contêiner */
+    object-fit: cover; /* Preenche o espaço sem distorcer a imagem */
+    transition: transform 0.5s ease-in-out; /* Transição suave */
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.seta-direita {
+    right: 10px;
+}
+
+.seta-esquerda {
+    left: 10px;
+}
+
+
+
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Ajustando o tamanho da fonte para telas menores */
+    .tendencia-jeans-h1 {
+        font-size: 1.8em;
+    }
+
+    .paragrafo-jeans-sobre-jeans {
+        font-size: 1em;  /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    /* Ajustando o tamanho da imagem e a navegação para telas menores */
+    .image-container-tendencias {
+        height: 300px; /* Reduz a altura das imagens em telas menores */
+    }
+
+    .tendencias-img {
+        width: 160%; /* Aumenta um pouco a largura para que as imagens ainda sejam visíveis */
+    }
+
+    /* Ajuste no tamanho das setas para telas pequenas */
+    .seta {
+        font-size: 25px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustando ainda mais para dispositivos muito pequenos */
+    .tendencia-jeans-h1 {
+        font-size: 1.5em;  /* Diminui ainda mais o tamanho do título */
+    }
+
+    .paragrafo-jeans-sobre-jeans {
+        font-size: 0.9em;  /* Reduz o tamanho da fonte */
+    }
+
+    .image-container-tendencias {
+        height: 250px; /* Mais redução na altura das imagens em telas muito pequenas */
+    }
+
+    .tendencias-img {
+        width: 170%; /* Aumenta a largura da imagem ainda mais em telas muito pequenas */
+    }
+
+    .seta {
+        font-size: 20px; /* Diminui o tamanho das setas para telas menores */
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+        @font-face {
+            font-family: rajdhani;
+            src: url(fonts/Rajdhani-Regular.ttf) format("truetype");
+            font-family: rajdhani, Helvetica, sans-serif;
+        }
+
+        /* Estilos para responsividade */
+        @media (max-width: 768px) {
+            nav {
+                display: block;
+                text-align: center;
+            }
+
+            .social-media {
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
+            }
+
+            .input-top,
+            .input-footer {
+                width: 100%;
+                margin: 5px 0;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .texto-home {
+                font-size: 1.5em;
+            }
+
+            section.section-home,
+            article {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-media {
+                width: 25px;
+                height: 25px;
+            }
+
+            .texto-home {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="header-info">
+            <p>Sanarate, El Progreso - Guatemala</p>
+            <p>
+                <a class="information-top" href="tel:+50255135773"><img src="image/telefone.png" class="social-media-telefone" alt="telefone"> (502) 5513-5773</a>
+            </p>
+            
+                <a class="information-top" href="https://facebook.com"><img class="social-media" src="image/facebook-icon.ico" alt="facebook"></a>
+                <a class="information-top" href="https://instagram.com"><img class="social-media" src="image/instagram-logo.png" alt="instagram"></a>
+                <a class="information-top" href="https://twitter.com"><img class="social-media" src="image/twitter.webp" alt="x"></a>
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <p>María Grande</p>
+        </div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="mariagrande.html">Asesoria de imagen</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactos.html">Contacto</a>
+        </div>
+        <input class="input-top" type="text" id="search" name="search" placeholder="Buscar..." autocomplete="off">
+        <ul id="suggestions" class="suggestions-list"></ul>
+    </nav>
+
+
+
+    <main>
+        
+        <div class="main-consejos">
+            <div class="text-content">
+                <h1 class="tendencia-jeans-h1">
+                    Descubriendo la tendencia jeans sobre jeans.
+                </h1>
+                
+                <p class="paragrafo-jeans-sobre-jeans" >
+                    ¿Alguna vez te has encontrado pensando en cómo usar jeans con jeans y tenías miedo de armar outfits? Si es así, ¡es hora de dejar ese prejuicio a un lado y lanzarse a esta tendencia que es popular cada temporada! Después de todo, los jeans son una prenda democrática y merecen un espacio especial en tu armario. <br> <br>
+
+                    Al combinar dos piezas de mezclilla, es importante tener cuidado de no caer en la misma. Un consejo valioso es invertir en diferentes accesorios, como zapatos y bolsos coloridos, para darle ese toque especial a tu look. <br> <br>
+
+                    Intente combinar diferentes lavados de jeans y cambiar los diseños de las piezas para crear looks interesantes y únicos. ¿Qué tal optar por un crop top moderno con pantalones de campana, unos shorts con camisas o descubrir modelos con cortes y formas innovadores?
+
+
+                </p>
+            
+                <h2 class="title-consejos-sub">
+                    Falda y camisa
+                </h2>
+            
+                
+
+
+                <div class="mulher-tendencias">
+                    <div class="image-container-tendencias">
+                        <img class="tendencias-img primeira-imagem" src="image/outfit/mulher-uma-lado-da-outra.jpg" alt="">
+                        <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('primeira')">&#8592;</div>
+                        <div class="seta seta-direita" onclick="rolarImagemDireita('primeira')">&#8594;</div>
+                    </div>
+                </div>
+                
+                <p class="paragrafo-jeans-sobre-jeans">
+                    Dependiendo del largo de la falda, puedes usarla incluso para eventos más formales. Invierte en estilos de faldas midi para una apariencia elegante y complétalas con tacones altos, collares largos o accesorios de mezclilla para darle un toque extra de estilo.
+                </p><br>
+                
+                <h2 class="title-consejos-sub">
+                    Vestido Jeans
+                </h2>
+                
+                <div class="mulher-tendencias">
+                    <div class="image-container-tendencias">
+                        <img class="tendencias-img segunda-imagem" src="image/outfit/mulher-vestido-jeans-juntas.jpg" alt="">
+                        <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('segunda')">&#8592;</div>
+                        <div class="seta seta-direita" onclick="rolarImagemDireita('segunda')">&#8594;</div>
+                    </div>
+                </div>
+                
+                <h2 class="title-consejos-sub">
+                    Chaquetas vaqueras
+                </h2>
+                
+                <div class="mulher-tendencias">
+                    <div class="image-container-tendencias">
+                        <img class="tendencias-img terceira-imagem" src="image/outfit/mulher-jaqueta-jeans-juntas.jpg" alt="">
+                        <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('terceira')">&#8592;</div>
+                        <div class="seta seta-direita" onclick="rolarImagemDireita('terceira')">&#8594;</div>
+                    </div>
+                </div>
+                
+                
+
+            <p class="paragrafo-jeans-sobre-jeans">
+
+                Clásicas y versátiles, las chaquetas vaqueras son imprescindibles en cualquier armario. Intente combinarlo con sus jeans favoritos para una apariencia casual y relajada.
+            </p>
+            <br>
+
+            <h2 class="title-consejos-sub">
+                Chalecos de mezclilla
+            </h2>
+
+            
+
+            <div class="mulher-tendencias">
+                <div class="image-container-tendencias">
+                    <img class="tendencias-img quarta-imagem" src="image/outfit/colete-jeans-2.jpg" alt="">
+                    <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('quarta')">&#8592;</div>
+                    <div class="seta seta-direita" onclick="rolarImagemDireita('quarta')">&#8594;</div>
+                </div>
+            </div>
+            
+
+            <p class="paragrafo-jeans-sobre-jeans">
+                ¡Los chalecos vaqueros vuelven con todo! Prueba diferentes modelos y combinaciones para encontrar el que más te convenga. Combínalo con pantalones o faldas de mezclilla y complétalo con blusas de manga larga o corta o una camiseta sin mangas debajo para una apariencia elegante.
+            </p> <br>
+
+            <h2 class="title-consejos-sub">
+                Overoles de mezclilla
+            </h2>
+
+
+
+            <div class="mulher-tendencias">
+                <div class="image-container-tendencias">
+                    <img class="tendencias-img quinta-imagem" src="image/outfit/macacao-jeans.jpg" alt="">
+                    <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('quinta')">&#8592;</div>
+                    <div class="seta seta-direita" onclick="rolarImagemDireita('quinta')">&#8594;</div>
+                </div>
+            </div>
+
+           <p class="paragrafo-jeans-sobre-jeans">
+
+            Versátiles y prácticos, los monos vaqueros son una pieza única que a todo el mundo le encanta. Intente usar camisas estampadas o lisas debajo para una apariencia diferente y complemente con zapatillas cómodas o sandalias planas para una apariencia relajada, o tacones altos para una ocasión más elegante. En los días más fríos, agregue un blazer o una chaqueta vaquera encima para mantenerse abrigado y elegante.
+        </p><br>
+
+        <h2 class="title-consejos-sub">
+            Shorts y Camisa
+        </h2>
+
+
+        <div class="mulher-tendencias">
+            <div class="image-container-tendencias">
+                <img class="tendencias-img sexta-imagem" src="image/outfit/shorts-jeans.jpg" alt="">
+                <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('sexta')">&#8592;</div>
+                <div class="seta seta-direita" onclick="rolarImagemDireita('sexta')">&#8594;</div>
+            </div>
+        </div>
+
+
+        <p class="paragrafo-jeans-sobre-jeans">
+
+            Los shorts vaqueros son auténticos comodines en el armario, permitiendo infinidad de combinaciones. Para una apariencia totalmente de mezclilla, intente usar pantalones cortos con camisas en diferentes lavados, blusas y camisetas sin mangas para una apariencia moderna. Haz un nudo al final de la blusa para darle un toque extra de estilo y complétala con tacones o zapatos planos en tus pies y tu collar favorito.
+        </p>
+        <br>
+
+        <h2 class="title-consejos-sub">
+            Pantalones y camisa
+        </h2>
+
+        <div class="mulher-tendencias">
+            <div class="image-container-tendencias">
+                <img class="tendencias-img setima-imagem" src="image/outfit/calca-camisa-jeans.jpg" alt="">
+                <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('setima')">&#8592;</div>
+                <div class="seta seta-direita" onclick="rolarImagemDireita('setima')">&#8594;</div>
+            </div>
+        </div>
+
+
+        <p class="paragrafo-jeans-sobre-jeans">
+        
+            Es un clásico que nunca pasa de moda. Además de ser hermoso y cómodo, este dúo es extremadamente versátil y puede pasar fácilmente del día a la noche. Para lucir esta combinación, elige jeans con camisas más ligeras. Añade un cinturón colorido o de un solo color para darle un toque de estilo y elige entre zapatos Oxford, zapatillas deportivas o unos bonitos zapatos de tacón para completar el look. Ahora que has aprendido a usar jeans con jeans, ¡es hora de lucir las combinaciones y mostrar tu estilo!
+
+
+        </p>
+
+        
+        
+            <br>
+
+            
+
+
+            </div>
+        
+            <div class="image-right">
+                <img src="image/outfit/mulher-no-computador.jpg" alt="mujer-en-la-computadora">
+        
+                <!-- Novo título e parágrafo abaixo da imagem, na mesma coluna -->
+                <h3 class="title-consejos additional-title">Blog de moda</h3>
+                <p class="paragraph-consejos additional-paragraph">
+                    Image Consulting es un espacio democrático con infinitas posibilidades. Por eso, María Grande valoramos todas las etapas del proceso: desde el primer contacto hasta la ejecución del servicio con excelencia y, también, la creación de una red de intercambio de información que te ayudará a sacar el máximo rendimiento a tu consultoría en nuestro <b>Blog de Moda.</b>
+                </p> <br> 
+                <p class="paragraph-consejos additional-paragraph">
+                    Por eso creamos el María Blog, un blog de moda donde nuestras consultoras comparten consejos, enseñanzas y mucho contenido sobre todo el mundo de la asesoría de imagen. En nuestro archivo de post podrás encontrar textos sobre colores, tejidos, formas, tendencias, productos, estilo, moda, maquillaje, belleza, decoración y mucho, mucho más. ¡Ven a navegar por nuestro blog y desarrolla aún más tu mejor versión!
+                </p> <br> 
+
+       
+    
+
+        <a href="https://www.instagram.com/celestitch_?igsh=dnU5ZjczNWVkNXhp" target="_blank"><img src="image/icon-footer/instagram.png" alt="instagram-icon" id="imagem-fixada">
+        </a>
+        <a href="#" target="_blank"><img src="image/icon-footer/twitter.png" alt="twitter-icon" id="imagem-fixada-2">
+        
+        </a>
+    
+        <a href="https://wa.me/+50255135773" target="_blank"><img src="image/icon-footer/whatssap.png" alt="whatssap" id="imagem-fixada-3">
+        
+        </a>
+
+
+
+
+    </main>
+
+
+    <footer>
+        <p>© 2025 María Grande | Consultoria de Imagem e Estilo</p>
+        <a href="#">Política de Privacidade</a>
+    </footer>
+
+    <script src="asesoria-maria.js"></script>
+    
+</body>
+</html>

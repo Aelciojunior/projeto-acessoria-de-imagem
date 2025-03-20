@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="maria.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria grande - acessoria de image y estilo</title>
+    <style>
+        @font-face {
+    font-family:rajdhani ;
+    src: url(fonts/Rajdhani-Regular.ttf) format(truetype);
+    font-family: rajdhani, Helvetica, sans-serif;  }
+    </style>
+    
+</head>
+
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+           Sanarate, El Progresso - Guatemala 
+            <a class="information-top" href="#"><img src="image/telefone.png" class="social-media-telefone" alt="telefone"></a> (502) 5513-5773 
+        
+            <a class="information-top" href="#"><img class="social-media"  src="image/facebook-icon.ico" alt="facebook"></a>
+        
+            <a class="information-top" href="#"><img class="social-media"  src="image/instagram-logo.png" alt="instagram"></a>
+        
+            <a class="information-top" href="#"><img class="social-media" src="image/twitter.webp" alt="x"></a>
+        </header>
+        <nav>
+            
+            María Grande
+            <a href="home.html">HOME</a>
+            <a href="#">SOBRE</a>
+            <a href="mariagrande.html">CONSULTORIA DE IMAGE</a>
+            <a href="#">SERVICIOS</a>
+            <a href="#">BLOG</a>
+            <a href="#">CONTACTO</a>
+            <input class="input-top" type="text" name="search" placeholder="Busca">
+        </nav>
+            <img src="image/maria celeste -grande.JPG" id="maria-grande"  alt="maria-grande"> 
+       
+        <main>
+            <h1 class="texto-home">Conozca la consultoria de image y estilo</h1>
+        <p class="paragrafo-home">
+            <b>María Grande Consultoria de Estilo</b> tiene un propósito: hacer que nuestros clientes  desarrollen su imagen personal a partir de un trabajo profundo analizando quiénes son y cómo quieren ser vistos por el mundo.
+        </p>
+        <p class="paragrafo-home">
+            A partir de esta conexión con ellos mismos y alineación de expectativas, somos capaces de hacer un trabajo de 360 ​​grados ofreciendo servicios de asesoría de imagen y mucho más.
+        </p>
+        
+        <p class="paragrafo-home">
+            La consultoría de imagen es un servicio especializado que ayuda a personas y empresas a construir y mejorar la forma en que se presentan al mundo, creando una imagen auténtica que se adapte a su estilo de vida u objetivos profesionales. Este tipo de consultoría cubre diversos aspectos visuales y de comportamiento, incluido el estilo personal, el color, el vestuario, la postura, la comunicación e incluso la etiqueta.</p>
+
+            <p class="paragrafo-home">El proceso suele comenzar con un análisis profundo del cliente, donde el consultor busca comprender las necesidades, gustos y valores de la persona o marca. En base a esto, desarrolla estrategias de estilo y recomendaciones personalizadas, ayudando al cliente a crear una imagen consistente que fortalece su confianza en sí mismo y refuerza su mensaje.
+
+            </p>
+
+            <section class="section-home">
+                Servicios
+            </section>
+            <article>
+                <a href="#"><img src="image/servicios-para-empresas.png" alt="curso-digital"></a>
+                <a href="#"><img src="image/livros-digital.png" alt="livros-digital"></a>
+                <a href="#"><img src="image/curso-digital.png" alt=""></a> 
+            
+            </article>
+            <aside>
+                <h2>
+                    Envíanos un correo electrónico:
+                </h2>
+                <input class="input-footer" type="text" name="search" placeholder="Escriba su nombre">
+                
+                <input class="input-footer" type="text" name="search" placeholder="Correo electrónico">
+
+                <button type="submit">Quiero registrarme</button>
+                
+                
+            </aside>
+            <section class="section-footer">
+                <h4>
+                    María Grande
+                </h4>
+                <p class="paragrafo-footer">
+                    Declarada amante de la moda, María Grande inició su carrera en consultoria de image en el año de 2022. Luego de trabajar en reconocidas empresas del sector de confección y calzado, obtuvo una visión privilegiada de importantes conceptos del área, como estilo y tendencias.
+                </p>
+                <h5>
+                    ¿Preguntas frecuentes?
+                </h5>
+                <a class="question-footer" href="#">¿Image Consulting tiene un proceso similar al del Fashion Squad?</a>
+                <a href="#"></a>
+                <a href="#"></a>
+
+            </section>
+
+
+
+        </main>
+        
+        
+            
+      
+
+    <footer>
+
+    </footer>
+    
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS
+
+
+
+@charset "UTF-8"
+
+
+    *{  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+
+    body{
+    background-color: #fff;
+    margin: auto;
+    width: 100%
+    
+    }
+    
+    
+    header {height: 100%;
+        background-color: #3F3F3F;
+        padding: 10px 0px;
+        line-height: 22px;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        text-indent: 100px;
+        }
+        
+   
+    .social-media{
+        width: 25px;
+       display: inline-block;
+       margin-left: auto;
+       margin-right: 5px;
+       position: relative;
+       top: 6px;
+       left: 538px;
+       
+       
+        }
+        .social-media-telefone{
+            width: 25px;
+       display: inline-block;
+       margin-left: auto;
+       margin-right: auto;
+       position: relative;
+       top: 7px;
+        }
+    
+    
+    nav {
+    background-color: white;
+    font-family: rajdhani, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    position: relative;
+    left: 100px;
+    padding: 25px;
+    
+    
+    }
+    nav a { font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-decoration:none ;
+        color: rgb(53, 52, 52);
+        font-weight: bold;
+        padding: 2px 6px;
+        position: relative;
+        left: 40px;
+        bottom: 8px;
+        }
+    nav a:hover{
+    text-decoration: underline;
+    color: rgb(214, 214, 11);
+    }
+    nav a::after{
+        color: aqua;
+    }
+    
+    
+    
+        
+    
+    .input-top{
+        position: relative;
+        left: 30px;
+        bottom: 8px;
+        padding: 5px;
+        font-size: 15px;
+        width: 19%;
+    }
+    #maria-grande{
+        width: 100%;
+    }
+   
+   
+
+
+main {
+    
+    font-size: 32px;
+    color: rgb(46, 46, 46);
+    opacity: 0.9;
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.texto-home{
+    width: 70%;
+    text-align: center;
+    padding-left: 200px;
+}
+.paragrafo-home{
+    color: rgb(5, 5, 5);
+    opacity: 0.7;
+    width: 70%;
+    text-align: center;
+    font-size: 22px;
+    padding-left: 200px;
+    font-weight: lighter;
+}
+.section-home{
+    background-color: #f1f0f0;
+    color: rgb(27, 27, 27);
+    font-size: 50px;
+    font-weight: 200;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+article img{
+    width: 350px;
+    height: 350px;
+    padding-top: 20px;
+    margin-left: 3px;
+}
+aside{
+    background-color: #e6b846;
+    margin-top: 20px;
+    padding: 40px;
+    padding-bottom: 10px;
+    
+}
+aside h2{
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    font-weight: 600;
+    position: relative;
+    left: 50px;
+    bottom: 28px;
+}
+.input-footer{
+    position: relative;
+    bottom: 85px;
+    left: 250px;
+    padding: 10px;
+    border-color: #ad892c;
+    border-radius: 2px 2px solid ;
+}
+button{
+    padding: 10px;
+    background-color: #c7a140;
+    width: 31.2%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    position: relative;
+    right: 150px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.section-footer{
+    background-color: #0E0E0E;
+    padding-top: 10px;
+    color: #fff;
+}
+h4{
+    font-family: rajdhani;
+    font-size: 70px;
+    text-align: left;
+    font-weight: lighter;
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
+.paragrafo-footer{
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 35%;
+    background-color: rgb(2, 2, 2);
+    text-align: justify;
+    position: relative;
+    bottom: 120px;
+    left: 50px;
+}
+h5{
+    position: relative;
+    bottom: 333px;
+    left: 130px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.question-footer{
+    font-size: 18px;
+    position: relative;
+    bottom: 350px;
+    left: 240px; 
+}
+
+    
+
+
+
+

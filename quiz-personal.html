@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leia os últimos artigos sobre consultoria de imagem, estilo e dicas para aprimorar sua imagem pessoal.">
+    <meta property="og:title" content="Blog - Maria Grande Consultoria de Imagem e Estilo">
+    <meta property="og:description" content="Descubra dicas e artigos sobre consultoria de imagem e estilo. Fique por dentro das últimas tendências.">
+    <title>Quiz personal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: rajdhani;
+            src: url(fonts/Rajdhani-Regular.ttf) format("truetype");
+            font-family: rajdhani, Helvetica, sans-serif;
+        }
+
+/* Resetando margens e padding de tudo */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Garantir que html e body ocupem 100% da tela */
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+}
+
+.quiz-personal {
+    font-size: 5em; /* Tamanho grande do texto */
+    color: white; /* Cor do texto */
+    background: linear-gradient(90deg, #464646, #5e5e5e, #858585); /* Cor de fundo com gradiente */
+    background-size: 400% 400%; /* Faz o fundo ocupar toda a largura */
+    animation: gradientMove 5s ease infinite; /* Animação de movimento do fundo */
+    text-align: center; /* Centraliza o texto */
+    padding: 50px 0; /* Espaçamento acima e abaixo */
+    width: 100%; /* Largura total */
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+/* Animação do movimento do fundo */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+.paragrafos-quiz-personal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f0f0f0; /* Cor de fundo desejada */
+    padding: 20px; /* Ajuste o padding conforme necessário para espaçar o conteúdo */
+    border-radius: 8px; /* Opcional: adiciona bordas arredondadas */
+    text-align: justify;
+    font-weight: 600;
+    color: #5e5e5e;
+    
+}
+
+.paragrafo-esquerda {
+    width: 48%;
+}
+
+.paragrafo-direita {
+    width: 48%;
+}
+
+
+
+
+
+
+
+
+
+/* Container geral que envolve a imagem e o texto */
+.content-container-quiz {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Alinha a imagem e o conteúdo no topo */
+    width: 100%;
+}
+
+
+
+.quiz-title {
+    text-align: center; /* Centraliza o título */
+    font-size: 24px; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaço entre o título e as perguntas */
+    width: 100%; /* Ocupa toda a largura disponível */
+    font-weight: bold; /* Título em negrito */
+    position: relative; /* Necessário para as linhas posicionadas */
+}
+
+.quiz-title::before, .quiz-title::after {
+    content: ""; /* Criar o conteúdo vazio para as linhas */
+    position: absolute;
+    top: 50%; /* Alinha verticalmente as linhas no meio do título */
+    width: 32%; /* Define o tamanho das linhas, pode ser ajustado */
+    height: 3px; /* Espessura da linha */
+    background-color: #3d3c3c; /* Cor da linha */
+}
+
+.quiz-title::before {
+    left: 0; /* Linha à esquerda */
+    margin-left: 0; /* Deixa a linha começar no início */
+}
+
+.quiz-title::after {
+    right: 0; /* Linha à direita */
+    margin-right: 0; /* Deixa a linha começar no final */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo da imagem */
+.image-quiz {
+    margin-right: 20px; /* Espaço entre a imagem e os textos */
+    object-fit: cover; /* Ajusta a imagem para se ajustar ao tamanho sem distorcer */
+    
+}
+
+/* Container para as perguntas e respostas */
+.text-content-quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; /* Alinha todos os itens ao lado esquerdo */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+/* Container do botão e do texto */
+.container-quiz-personal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espaço entre a pergunta e a resposta */
+    border: none !important; /* Garantir que não tenha borda */
+}
+
+/* Estilo do botão de expansão, sem borda */
+.expand-btn {
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #696969;
+    margin-right: 20px;
+    border: none !important; /* Remover borda */
+    outline: none !important; /* Remover o contorno do foco */
+}
+
+/* Texto da pergunta */
+.info-text-quiz-personal {
+    margin: 0;
+    font-size: 20px;
+    border: none !important; /* Remover borda */
+}
+
+/* Estilo da resposta */
+.answer {
+    display: none; /* Inicialmente invisível */
+    text-align: left;
+    margin-top: 10px; /* Espaço entre a pergunta e a resposta */
+    padding: 10px;
+    border-radius: 5px;
+    border: none !important; /* Remover borda */
+    outline: none !important; /* Remover o contorno do foco */
+    width: 70%; /* Garantir que a resposta ocupe toda a largura disponível */
+    color: #5e5e5e;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.answer p {
+    margin: 0; /* Remover margens extras dentro da resposta */
+}
+
+
+
+
+
+
+
+
+
+/* Ajuste para telas pequenas */
+@media (max-width: 768px) {
+    .quiz-personal {
+        font-size: 2.5em; /* Reduz o tamanho da fonte para telas pequenas */
+        padding: 30px 0; /* Reduz o padding */
+    }
+
+    .paragrafos-quiz-personal {
+        flex-direction: column; /* Organiza os parágrafos um abaixo do outro */
+        padding: 10px; /* Ajusta o espaçamento */
+    }
+
+    .paragrafo-esquerda, .paragrafo-direita {
+        width: 100%; /* Assegura que os parágrafos ocupem a tela inteira */
+        margin-bottom: 10px; /* Espaço entre os parágrafos */
+    }
+
+    .content-container-quiz {
+        flex-direction: column; /* Organiza a imagem e o conteúdo verticalmente */
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    .image-quiz {
+        margin-right: 0; /* Remove o espaço ao lado da imagem */
+        margin-bottom: 20px; /* Espaço abaixo da imagem */
+        width: 100%; /* Faz a imagem ocupar toda a largura */
+        object-fit: cover; /* Mantém a imagem sem distorção */
+    }
+
+    .quiz-title {
+        font-size: 1.5em; /* Ajusta o tamanho do título para telas pequenas */
+        margin-bottom: 15px; /* Diminui o espaçamento */
+    }
+
+    .text-content-quiz {
+        width: 100%; /* Ajusta a largura para 100% */
+    }
+
+    /* Container para as perguntas e respostas */
+    .container-quiz-personal {
+        flex-direction: column; /* Organiza as perguntas verticalmente */
+        margin-bottom: 20px; /* Espaço entre as perguntas */
+    }
+
+    .expand-btn, .collapse-btn {
+        font-size: 16px; /* Reduz o tamanho da fonte nos botões */
+        padding: 8px; /* Ajusta o padding dos botões */
+        margin-bottom: 5px; /* Espaço entre o botão e o texto */
+    }
+
+    /* Estilo da resposta */
+    .answer {
+        width: 90%; /* Ajusta a largura da resposta */
+    }
+
+    .info-text-quiz-personal {
+        font-size: 18px; /* Diminui o tamanho da fonte das perguntas */
+    }
+}
+
+/* Ajuste para telas muito pequenas (celulares antigos, por exemplo) */
+@media (max-width: 480px) {
+    .quiz-personal {
+        font-size: 1.8em; /* Reduz ainda mais o tamanho da fonte */
+        padding: 20px 0; /* Reduz o padding */
+    }
+
+    .paragrafos-quiz-personal {
+        padding: 5px; /* Ajusta o padding para telas bem pequenas */
+    }
+
+    .paragrafo-esquerda, .paragrafo-direita {
+        width: 100%; /* Assegura que os parágrafos ocupem toda a largura */
+        margin-bottom: 5px; /* Menor espaço entre os parágrafos */
+    }
+
+    .image-quiz {
+        width: 100%; /* Faz a imagem ocupar toda a largura */
+        margin-bottom: 10px; /* Ajusta o espaçamento abaixo da imagem */
+    }
+
+    .quiz-title {
+        font-size: 1.3em; /* Reduz o tamanho do título */
+    }
+
+    .answer {
+        width: 90%; /* Ajusta a largura das respostas para telas pequenas */
+    }
+
+    .info-text-quiz-personal {
+        font-size: 16px; /* Diminui o tamanho da fonte das perguntas */
+    }
+}
+
+
+
+
+      
+
+
+
+
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav {
+                display: block;
+                text-align: center;
+            }
+
+            .social-media {
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
+            }
+
+            .input-top,
+            .input-footer {
+                width: 100%;
+                margin: 5px 0;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .texto-home {
+                font-size: 1.5em;
+            }
+
+            section.section-home,
+            article {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-media {
+                width: 25px;
+                height: 25px;
+            }
+
+            .texto-home {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-info">
+            <p>Sanarate, El Progreso - Guatemala</p>
+            <p>
+                <a class="information-top" href="tel:+50255135773"><img src="image/telefone.png" class="social-media-telefone" alt="telefone"> (502) 5513-5773</a>
+            </p>
+            
+                <a class="information-top" href="https://facebook.com"><img class="social-media" src="image/facebook-icon.ico" alt="facebook"></a>
+                <a class="information-top" href="https://instagram.com"><img class="social-media" src="image/instagram-logo.png" alt="instagram"></a>
+                <a class="information-top" href="https://twitter.com"><img class="social-media" src="image/twitter.webp" alt="x"></a>
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <p>María Grande</p>
+        </div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="mariagrande.html">Asesoria de imagen</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactos.html">Contacto</a>
+        </div>
+        <input class="input-top" type="text" id="search" name="search" placeholder="Buscar..." autocomplete="off">
+        <ul id="suggestions" class="suggestions-list"></ul>
+
+    </nav>
+
+
+
+    <main> 
+
+
+        <h1 class="quiz-personal">
+            ASESORIA DE IMAGE
+        </h1>
+
+
+
+        <div class="paragrafos-quiz-personal">
+
+            <p class="paragrafo-esquerda"> Los estudios indican que el 55% de la primera impresión que la gente tiene de ti se basa en tu apariencia, el 38% en el tono de tu voz y el 7% en el contenido que dices. En los primeros 10 segundos de contacto, se capturará y juzgará su personalidad, comportamiento, profesionalismo y otra información. Por eso, transmitir una imagen positiva a través de tu forma de vestir puede garantizar el éxito en la transparencia de tu personalidad y tus verdaderos objetivos. <br> <br>
+
+                La asesoría de imagen es la herramienta ideal para quien busca transformar, mejorar o reajustar su imagen. Dudas relacionadas con tu estilo o la coordinación de tus piezas podrán resolverse a través del servicio. Si siempre usas la misma ropa, si quieres adaptarte a una nueva realidad, si quieres</p>
+
+
+                <p class="paragrafo-direita">
+
+                    Si tu imagen madura o ya no estás satisfecho con lo que ves en el espejo, la asesoría de imagen definitivamente te ayudará a retomar el camino correcto. <br> <br>
+
+                    A través de un análisis en profundidad y técnicas efectivas – que tienen en cuenta tus preferencias, tu personalidad, tu cuerpo, tus ambiciones y deseos – la Asesora de Imagen y Estilista Personal <b>María Grande</b> te revelará los pasos que debes seguir para lograr la impresión que deseas transmitir a quienes te rodean. <br> <br>
+
+                    Es un verdadero proceso de autoconocimiento, que te enseñará a resaltar tus fortalezas. Además de lograr una apariencia renovada y única, las personas que reciben asesoría de imagen aprenden a consumir de manera inteligente, adquiriendo piezas clave acordes a su nuevo estilo de vida.
+
+
+
+                </p>
+        </div>
+
+
+
+        <div class="content-container-quiz">
+            <img class="image-quiz" src="image/blog-img/mulher-em-pe-2.png" alt="">
+            
+            <div class="text-content-quiz">
+                <!-- Título das perguntas -->
+                <h2 class="quiz-title">¿PREGUNTAS FRECUENTES?</h2>
+        
+                <!-- Pergunta 1 -->
+                <div class="container-quiz-personal">
+                    <button class="expand-btn" onclick="toggleAnswer(0)">+</button>
+                    <button class="collapse-btn" onclick="toggleAnswer(0)" style="display: none;">-</button>
+                    <p class="info-text-quiz-personal">María, ¿por qué debería hacer una asesoría de imagen?</p>
+                </div>
+                
+                <div id="answer0" class="answer">
+                    <p>Contrariamente a la creencia popular, la asesoría de imagen no está ligada a ningún tipo de lujo o futilidad. La asesoría de imagen puede ejercitar tu autoconocimiento, mejorar tu autoestima, hacerte el día a día más fácil e incluso reducir el coste de compra de ropa, considerando que serás más asertivo según tu propio estilo.</p>
+                </div>
+        
+                <!-- Pergunta 2 -->
+                <div class="container-quiz-personal">
+                    <button class="expand-btn" onclick="toggleAnswer(1)">+</button>
+                    <button class="collapse-btn" onclick="toggleAnswer(1)" style="display: none;">-</button>
+                    <p class="info-text-quiz-personal">¿La asesoría de imagen tiene un proceso como el Fashion Squad?</p>
+                </div>
+        
+                <div id="answer1" class="answer">
+                    <p>Puede haber algunas similitudes, pero en general la consultoría es menos agresiva. No está enfocado a cambiar completamente tu guardarropa, es un trabajo más delicado y profundo, cuyo principal objetivo es ayudar a las personas a conocerse a sí mismas, encontrar su estilo y crear su imagen de la forma en que quieren ser vistas por el mundo.</p>
+                </div>
+        
+                <!-- Pergunta 3 -->
+                <div class="container-quiz-personal">
+                    <button class="expand-btn" onclick="toggleAnswer(2)">+</button>
+                    <button class="collapse-btn" onclick="toggleAnswer(2)" style="display: none;">-</button>
+                    <p class="info-text-quiz-personal">Pero, ¿la asesoría de imagen sólo es apta para personajes famosos? ¿O puedo hacerlo yo también?</p>
+                </div>
+                
+                <div id="answer2" class="answer">
+                    <p>Siempre escuchamos este tipo de rumores de que la asesoría de imagen es para artistas, modelos o cualquiera que tenga mucho dinero de sobra. ¡Pero eso son sólo palabras! Cuando alguien aparece con frecuencia en los medios, la apariencia acaba siendo sumamente importante, pero el asesoramiento no es solo para celebridades. Cualquiera que necesite mejorar su imagen, aumentar su autoestima o simplemente comprender un poco más el estilo puede y debe acudir a una asesoría de imagen.</p>
+                </div>
+        
+                <!-- Pergunta 4 -->
+                <div class="container-quiz-personal">
+                    <button class="expand-btn" onclick="toggleAnswer(3)">+</button>
+                    <button class="collapse-btn" onclick="toggleAnswer(3)" style="display: none;">-</button>
+                    <p class="info-text-quiz-personal">¿Existe alguna diferencia entre Consultoría de Imagen y Estilista Personal?</p>
+                </div>
+                
+                <div id="answer3" class="answer">
+                    <p>¡Con seguridad! La asesoría de imagen es un proceso de cambio más completo. Comienza desde adentro hacia afuera, aportando autoconocimiento y técnicas profundas para encontrar tu estilo y tu mejor imagen. Además, en muchas ocasiones la asesoría de imagen acaba involucrando a profesionales de áreas complementarias como peluqueros y maquilladores.
+
+                        Personal Stylist es un proceso más enfocado y específico. El estudio y las métricas son menores y lo recomendaría para momentos y eventos puntuales, como reuniones de negocios, fiestas, reuniones u otras situaciones que requieran una nueva y mejor perspectiva personal en el momento oportuno.</p>
+                </div>
+        
+                <!-- Pergunta 5 -->
+                <div class="container-quiz-personal">
+                    <button class="expand-btn" onclick="toggleAnswer(4)">+</button>
+                    <button class="collapse-btn" onclick="toggleAnswer(4)" style="display: none;">-</button>
+                    <p class="info-text-quiz-personal">Y hablando de personalidad, ¿crees que realizando una asesoría de imagen mi personalidad puede cambiar?</p>
+                </div>
+                
+                <div id="answer4" class="answer">
+                    <p>Al contar con una asesoría de imagen no cambiarás tu personalidad y mucho menos te restringirás a los estándares de belleza impuestos por la sociedad. De hecho, acabas siendo aún más tú mismo, pero con un mayor conocimiento de tu imagen y una visión más clara de lo que realmente quieres transmitir a través de ella.</p>
+                </div>
+
+
+
+
+
+                
+                
+                
+                <div class="container-quiz-personal">
+                    <button class="expand-btn" onclick="toggleAnswer(5)">+</button>
+                    <button class="collapse-btn" onclick="toggleAnswer(5)" style="display: none;">-</button>
+                    <p class="info-text-quiz-personal">¿Cuánto tiempo suele tardar en realizarse una asesoría de imagen?</p>
+                </div>
+                
+                <div id="answer5" class="answer">
+                    <p>Por tanto, no existe un horario estándar. Una consultoría completa puede tardar de 5 a 10 reuniones en completarse. Un total de 12 horas o más de trabajo. </p>
+                </div>
+
+
+
+
+
+                <div class="container-quiz-personal">
+                    <button class="expand-btn" onclick="toggleAnswer(6)">+</button>
+                    <button class="collapse-btn" onclick="toggleAnswer(6)" style="display: none;">-</button>
+                    <p class="info-text-quiz-personal">¿La asesoría de imagen está dirigida únicamente a mejorar mi ropa?</p>
+                </div>
+                
+                <div id="answer6" class="answer">
+                    <p>Además de la ropa, la asesoría de imagen acaba resultando en algo impagable que es el conocimiento de cómo vestir bien y según quién eres. Además, hay asistencia y recomendaciones de calzado, complementos e incluso involucramos a profesionales de corte de pelo y maquillaje. </p>
+                </div>
+
+
+
+
+
+                <div class="container-quiz-personal">
+                    <button class="expand-btn" onclick="toggleAnswer(7)">+</button>
+                    <button class="collapse-btn" onclick="toggleAnswer(7)" style="display: none;">-</button>
+                    <p class="info-text-quiz-personal">¿Y después de la consultoría ya no necesitaré un consultor?</p>
+                </div>
+                
+                <div id="answer7" class="answer">
+                    <p>Si quieres mantener la consultoría, existe el servicio Personal Stylist, que puedes utilizar para situaciones más concretas como un evento o una nueva temporada. Yo misma suelo recomendar una sesión de Personal Stylist de vez en cuando para que puedas actualizarte, y por supuesto, aprender siempre más. </p>
+                </div>
+
+
+
+
+
+                <div class="container-quiz-personal">
+                    <button class="expand-btn" onclick="toggleAnswer(8)">+</button>
+                    <button class="collapse-btn" onclick="toggleAnswer(8)" style="display: none;">-</button>
+                    <p class="info-text-quiz-personal">Pero hablando de precio, ¿es muy cara una asesoría de imagen y estilo?</p>
+                </div>
+                
+                <div id="answer8" class="answer">
+                    <p>El concepto de caro y barato es relativo. Un outfit que cuesta US$ 100.00 puede resultar muy caro o muy barato, dependiendo de tu objetivo y del retorno de la compra. Por ejemplo, comprar un pantalón de US$ 100.00 que no usas es mucho más caro que ese vestido de US$ 200.00 que te pones inmediatamente, ¿no crees? Con una asesoría de imagen terminas aprendiendo cómo ahorrar dinero, pues serás mucho más asertivo a la hora de comprar y aprenderás más combinaciones de prendas que quizás ya tienes y ya no usas. Pensando en el medio y largo plazo, la asesoría de imagen acaba convirtiéndose en una economía, además de sostenible. Ponte en contacto y consulta un presupuesto. </p>
+                </div>
+
+
+
+
+                <div class="container-quiz-personal">
+                    <button class="expand-btn" onclick="toggleAnswer(9)">+</button>
+                    <button class="collapse-btn" onclick="toggleAnswer(9)" style="display: none;">-</button>
+                    <p class="info-text-quiz-personal">¿Y qué hago con las prendas que ya tengo en mi armario?</p>
+                </div>
+                
+                <div id="answer9" class="answer">
+                    <p>¡Quédatelos! Algunos programas de televisión acaban dando una imagen equivocada de consultoría cuando dan la impresión de que la persona debe volver a comprar todo nuevo. En un asesoramiento de imagen serio comprobamos todo lo que tienes, lo que se puede reutilizar mediante nuevas combinaciones y lo que ya no sirve y ya no coincide con tu nueva etapa. También ajustamos o personalizamos lo necesario y añadimos sólo lo que falta en tu armario, como piezas clave para combinaciones inteligentes con lo que ya tienes en casa. </p>
+                </div>
+
+
+
+
+
+                <div class="container-quiz-personal">
+                    <button class="expand-btn" onclick="toggleAnswer(10)">+</button>
+                    <button class="collapse-btn" onclick="toggleAnswer(10)" style="display: none;">-</button>
+                    <p class="info-text-quiz-personal">María, te confieso que tengo un poco de sobrepeso, ¿me recomendarías hacer una dieta antes de empezar?</p>
+                </div>
+                
+                <div id="answer10" class="answer">
+                    <p>En cualquier caso, no necesitas adelgazar para iniciar tu asesoría de imagen. ¡Empiece ahora, ya que los resultados le darán más entusiasmo para los próximos cambios! Te sentirás más fuerte y seguro para aceptarte tal como eres o buscar tu nuevo yo. El mejor estilo es aquel que, sobre todo, te hace sentir bien y renovado contigo mismo. </p>
+                </div>
+
+
+
+
+                <div class="container-quiz-personal">
+                    <button class="expand-btn" onclick="toggleAnswer(11)">+</button>
+                    <button class="collapse-btn" onclick="toggleAnswer(11)" style="display: none;">-</button>
+                    <p class="info-text-quiz-personal">¿Se puede recomendar la consultoría a personas que a veces sienten un poco de pereza?</p>
+                </div>
+                
+                <div id="answer11" class="answer">
+                    <p>No te sientas presionado. El asesoramiento realmente sirve para educarte y animarte a expresarte correctamente a través de tu estilo, bueno, hablando de pereza e inspiración, o si simplemente no tienes mucho tiempo libre, con el servicio Personal Sylist se producen diferentes looks para las más diversas situaciones (trabajo, día a día, fiesta y fin de semana), utilizando las piezas que ya tienes. Todos los looks son fotografiados y convertidos en un lookbook que sirve de referencia, inspiración y consulta siempre que tengas dudas o simplemente necesites un vistazo rápido. </p>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+
+
+        
+
+
+
+
+
+
+
+
+    <a href="https://www.instagram.com/celestitch_?igsh=dnU5ZjczNWVkNXhp" target="_blank"><img src="image/icon-footer/instagram.png" alt="instagram-icon" id="imagem-fixada">
+    </a>
+    <a href="#" target="_blank"><img src="image/icon-footer/twitter.png" alt="twitter-icon" id="imagem-fixada-2">
+    
+    </a>
+
+    <a href="https://wa.me/+50255135773" target="_blank"><img src="image/icon-footer/whatssap.png" alt="whatssap" id="imagem-fixada-3">
+    
+    </a>
+    
+</main>
+
+<footer>
+    <p>© 2025 María Grande | Consultoria de Imagem e Estilo</p>
+    <a href="#">Política de Privacidade</a>
+</footer>
+<script src="asesoria-maria.js"></script>
+</body>
+
+</html>

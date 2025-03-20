@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os serviços de consultoria de imagem e estilo oferecidos por María Grande para transformar sua imagem pessoal.">
+    <meta property="og:title" content="Serviços - Maria Grande Consultoria de Imagem e Estilo">
+    <meta property="og:description" content="Descubra todos os serviços de consultoria de imagem e estilo oferecidos por María Grande.">
+    <title>Servicios para empresas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: rajdhani;
+            src: url(fonts/Rajdhani-Regular.ttf) format("truetype");
+            font-family: rajdhani, Helvetica, sans-serif;
+        }
+
+        body {
+            font-family: rajdhani, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+
+
+
+
+        .servicios-para-empresas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre os itens */
+    align-items: flex-start; /* Alinha as imagens e textos à esquerda */
+    margin-left: 300px; /* Aumenta a margem à esquerda para afastar mais para o lado direito */
+}
+
+
+.servicio-item {
+    display: flex; /* Flex para alinhar a imagem à esquerda e o texto à direita */
+    gap: 15px; /* Espaço entre a imagem e o conteúdo */
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+}
+
+.img-servicios-para-empresas {
+    width: 400px; /* Largura da imagem */
+    height: 390px; /* Altura da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste ao tamanho */
+}
+
+.info-servico {
+    max-width: 300px; /* Limita a largura do conteúdo de texto */
+}
+
+.titulo-servico {
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 50px;
+    width: 150%;
+}
+
+.descricao-servico {
+    font-size: 20px;
+    color: #666;
+    margin-top: 5px;
+    margin-left: 50px;
+    width: 150%;
+    text-align: justify;
+}
+
+
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .servicios-para-empresas-container {
+        margin-left: 30px; /* Ajusta a margem à esquerda para telas menores */
+    }
+
+    .servicio-item {
+        flex-direction: column; /* Empilha a imagem e o conteúdo verticalmente */
+        align-items: center; /* Centraliza as imagens e textos */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .img-servicios-para-empresas {
+        width: 100%; /* Ajusta a largura da imagem para ocupar 100% da tela */
+        height: auto; /* Ajusta a altura proporcionalmente */
+        max-width: 400px; /* Mantém a largura máxima */
+    }
+
+    .info-servico {
+        max-width: 90%; /* Ajusta a largura do conteúdo de texto */
+    }
+
+    .titulo-servico {
+        font-size: 28px; /* Ajusta o tamanho da fonte para telas menores */
+        margin-left: 0; /* Remove a margem à esquerda do título */
+        width: 100%;
+    }
+
+    .descricao-servico {
+        font-size: 18px; /* Ajusta o tamanho da descrição */
+        margin-left: 0; /* Remove a margem à esquerda */
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicios-para-empresas-container {
+        margin-left: 20px; /* Diminui a margem à esquerda para telas menores */
+    }
+
+    .servicio-item {
+        flex-direction: column; /* Empilha a imagem e o conteúdo verticalmente */
+        align-items: center; /* Centraliza as imagens e textos */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .img-servicios-para-empresas {
+        width: 90%; /* Ajusta a largura da imagem para 90% da tela */
+        height: auto; /* Ajusta a altura proporcionalmente */
+    }
+
+    .info-servico {
+        max-width: 90%; /* Ajusta a largura do conteúdo de texto */
+    }
+
+    .titulo-servico {
+        font-size: 24px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .descricao-servico {
+        font-size: 16px; /* Ajusta o tamanho da descrição */
+    }
+}
+
+@media (max-width: 480px) {
+    .servicios-para-empresas-container {
+        margin-left: 10px; /* Menor margem à esquerda para telas pequenas */
+    }
+
+    .servicio-item {
+        flex-direction: column; /* Empilha a imagem e o conteúdo verticalmente */
+        align-items: center; /* Centraliza as imagens e textos */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .img-servicios-para-empresas {
+        width: 100%; /* Ajusta a largura da imagem para ocupar 100% da tela */
+        height: auto; /* Ajusta a altura proporcionalmente */
+    }
+
+    .info-servico {
+        max-width: 100%; /* Ajusta a largura do conteúdo de texto */
+    }
+
+    .titulo-servico {
+        font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .descricao-servico {
+        font-size: 14px; /* Ajusta o tamanho da descrição */
+    }
+}
+
+
+
+
+
+
+
+
+
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav {
+                display: block;
+                text-align: center;
+            }
+
+            .social-media {
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
+            }
+
+            .input-top,
+            .input-footer {
+                width: 100%;
+                margin: 5px 0;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .texto-home {
+                font-size: 1.5em;
+            }
+
+            section.section-home,
+            article {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-media {
+                width: 25px;
+                height: 25px;
+            }
+
+            .texto-home {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-info">
+            <p>Sanarate, El Progreso - Guatemala</p>
+            <p>
+                <a class="information-top" href="tel:+50255135773"><img src="image/telefone.png" class="social-media-telefone" alt="telefone"> (502) 5513-5773</a>
+            </p>
+            
+                <a class="information-top" href="https://facebook.com"><img class="social-media" src="image/facebook-icon.ico" alt="facebook"></a>
+                <a class="information-top" href="https://instagram.com"><img class="social-media" src="image/instagram-logo.png" alt="instagram"></a>
+                <a class="information-top" href="https://twitter.com"><img class="social-media" src="image/twitter.webp" alt="x"></a>
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <p>María Grande</p>
+        </div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="mariagrande.html">Asesoria de imagen</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactos.html">Contacto</a>
+        </div>
+        <input class="input-top" type="text" id="search" name="search" placeholder="Buscar..." autocomplete="off">
+<ul id="suggestions" class="suggestions-list"></ul>
+
+    </nav>
+
+
+    <main>
+
+<h1 id="h1-service">SERVICIOS PARA EMPRESAS</h1>
+<p id="paragrafo-service">¿Estás interesado en algún servicio? ¿Tiene alguna pregunta? Ponte en <a href="contactos.html"><b>contacto</b></a>, o envía un correo electrónico a <br><a href="#"><b>mariacele69@gmail.com</b></a> o háblame vía <a href="https://wa.me/+50255135773"><b>WhatsApp</b></a> o a mi teléfono (502) 5513-5773.</p>
+
+
+
+
+
+
+
+<div class="servicios-para-empresas-container">
+    <div class="servicio-item">
+        <img class="img-servicios-para-empresas" src="image/outfit/servicios-para-empresas/mulher-dando-palestra.jpg" alt="">
+        <div class="info-servico">
+            <h3 class="titulo-servico">CONFERENCIAS</h3>
+            <p class="descricao-servico">Las conferencias son una estupenda manera de hacer regalos a los empleados de tu empresa, especialmente en fechas señaladas, como el Día de la Mujer o el Día de la Madre, por ejemplo. Además de ser una actividad interesante para los empleados, tiene el beneficio de hacerlos más conscientes de su propia imagen dentro de la empresa.</p>
+        </div>
+    </div>
+    <div class="servicio-item">
+        <img class="img-servicios-para-empresas" src="image/outfit/servicios-para-empresas/grupo-de-mulheres.jpg" alt="">
+        <div class="info-servico">
+            <h3 class="titulo-servico">ENTRENAMIENTOS</h3>
+            <p class="descricao-servico">La consultoría de imagen ofrece recursos no sólo para mejorar la imagen de su equipo, sino que también puede proporcionar nuevas cualificaciones para su equipo de ventas, moda o belleza. Puede resultar difícil para una empresa abordar la presentación de los empleados. Por eso, algunos delegan esta tarea en un profesional. Puede ser un gran diferenciador para su fuerza de ventas.</p>
+        </div>
+    </div>
+    <div class="servicio-item">
+        <img class="img-servicios-para-empresas" src="image/outfit/servicios-para-empresas/assistindo-aula-no-compuitador.jpg" alt="">
+        <div class="info-servico">
+            <h3 class="titulo-servico">CLASES TEMÁTICAS</h3>
+            <p class="descricao-servico">Para quienes buscan profundizar en un área específica, estos cursos ofrecen clases sobre temas como el automaquillaje o el estilismo nupcial, por ejemplo. Es posible crear contenidos exclusivos y personalizados, según la demanda del cliente, para grupos o clases reducidas.</p>
+        </div>
+    </div>
+    <div class="servicio-item">
+        <img class="img-servicios-para-empresas" src="image/outfit/servicios-para-empresas/mulher-no-salao-de-beleza.jpg" alt="">
+        <div class="info-servico">
+            <h3 class="titulo-servico">EVENTOS EN TIENDA</h3>
+            <p class="descricao-servico">Contar con un asesor de imagen en tienda es un excelente recurso para captar clientes y aumentar las ventas. Con servicios que van desde el personal shopper hasta el análisis del color, tu marca puede ofrecer un servicio diferenciado.</p>
+        </div>
+    </div>
+    <div class="servicio-item">
+        <img class="img-servicios-para-empresas" src="image/outfit/servicios-para-empresas/mulher-em-fileiras.jpg" alt="">
+        <div class="info-servico">
+            <h3 class="titulo-servico">PRODUCCIÓN DE CONTENIDO ESPECIALIZADO</h3>
+            <p class="descricao-servico">¿Te gustaría producir contenidos con las nociones y conocimientos de un asesor de imagen? Ya sea en soporte escrito, fotografías o vídeos, es posible crear contenidos llenos de información útil, en el formato que necesites.</p>
+        </div>
+    </div>
+    <div class="servicio-item">
+        <img class="img-servicios-para-empresas" src="image/outfit/servicios-para-empresas/workshop.jpg" alt="">
+        <div class="info-servico">
+            <h3 class="titulo-servico">WORKSHOPS</h3>
+            <p class="descricao-servico">Su objetivo es difundir herramientas de asesoría de imagen y trucos de estilismo para mujeres que buscan mejorar su estilo y sentirse más seguras. Con clases grandes o grupos reducidos, según lo que necesite el cliente. El contenido puede ser sobre técnicas de consultoría en general o estar enfocado a un tema específico, como “estilo después de la maternidad”, “estilo en cualquier forma física”, “estilo en el trabajo”, entre muchos otros.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://www.instagram.com/celestitch_?igsh=dnU5ZjczNWVkNXhp" target="_blank"><img src="image/icon-footer/instagram.png" alt="instagram-icon" id="imagem-fixada">
+</a>
+<a href="#" target="_blank"><img src="image/icon-footer/twitter.png" alt="twitter-icon" id="imagem-fixada-2">
+
+</a>
+
+<a href="https://wa.me/+50255135773" target="_blank"><img src="image/icon-footer/whatssap.png" alt="whatssap" id="imagem-fixada-3">
+
+</a>
+
+
+
+
+
+
+
+
+</main>
+
+<footer>
+    <p>© 2025 María Grande | Consultoria de Imagem e Estilo</p>
+    <a href="#">Política de Privacidade</a>
+</footer>
+<script src="asesoria-maria.js"></script>
+</body>
+
+</html>
