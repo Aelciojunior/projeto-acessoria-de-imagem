@@ -114,14 +114,13 @@ nav .input-top {
 
 
 main {
-    padding: 20px;
     text-align: center;
     margin-top: 20px;
 }
 
 #maria-grande {
-    max-width: 100%;
-    height: auto;
+   width: 100%;
+   margin-top: -20px;
   }
  /* A imagem original */
  .colors {
@@ -138,10 +137,13 @@ main {
   
 
 .texto-home {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-top: 20px;
+    font-weight: bold;
     
 }
+
+
 .logo p {
     font-size: 50px; /* Ajuste o valor para o tamanho desejado */
   }
@@ -149,10 +151,66 @@ main {
 
 
 .paragrafo-home {
-    font-size: 1rem;
-    margin: 10px 0;
-    line-height: 1.8;
+    font-size: 1.5rem;
+    margin-left: 60px;
+    line-height: 2;
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 50px;
+    
 }
+
+
+
+
+
+.image-container-2-home {
+  width: 221px;
+  height: 221px;
+  object-fit: cover; /* Para garantir que a imagem não distorça */
+  position: relative;
+  display: inline-block;
+}
+
+.image-container-2-home img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease; /* Tempo de transição ajustado para 0.3s */
+  filter: brightness(50%); /* Imagem escura */
+}
+
+.image-container-2-home img:hover {
+  filter: brightness(100%); /* Quando passar o mouse, a imagem vai clarear */
+}
+
+.title-overlay-home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+  pointer-events: auto;  /* Torna o texto interativo novamente */
+  width: 100%;
+}
+
+.title-overlay-home:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
 
 .section-home {
     margin: 20px 0;
@@ -167,16 +225,20 @@ article {
     margin-top: 20px;
 }
 .question-main{
-    font-size: 25px;
+    font-size: 2.5em;
 }
 .question:hover{
     color: #ff3f2e;
+    
 }
+
+
 
 
 .texto{
     opacity: 0.5;
-    font-size: 15px;
+    font-size: 1em;
+    text-align: justify;
 }
 
 aside {
@@ -216,9 +278,11 @@ button[type="submit"]:hover {
 .section-footer {
     background-color: #222222;
     color: white;
-    padding: 20px;
     margin-top: 30px;
+    text-align: justify;
+    align-items: center;
     text-align: center;
+    
 }
 
 .paragrafo-footer {
@@ -230,6 +294,7 @@ button[type="submit"]:hover {
     color: #bbb;
     margin-top: 10px;
     display: block;
+    
 }
 
 .question-footer:hover {
@@ -255,6 +320,13 @@ footer {
     font-size: 50px;
 }
 
+.consultoria-header p {
+  text-align: justify;
+  width: 80%;
+  margin-left: 150px;
+  font-size: 1.5em;
+} 
+
 .servicos-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -276,11 +348,13 @@ footer {
     margin-bottom: 15px;
 }
 .paragrafo-colors{
-    text-indent: 30px; /* Define o recuo no início do parágrafo */
     line-height: 1.6;  /* Ajusta o espaçamento entre as linhas */
     margin-top: 10px;  /* Ajusta o espaçamento acima do parágrafo */
     margin-bottom: 10px; /* Ajusta o espaçamento abaixo do parágrafo */
     font-size: 18px;
+    text-align: justify;
+    width: 80%;
+    margin-left: 150px;
     
 }
 

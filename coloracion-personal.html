@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolver | Coloración personal</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @font-face {
+            font-family: rajdhani;
+            src: url(fonts/Rajdhani-Regular.ttf) format("truetype");
+            font-family: rajdhani, Helvetica, sans-serif;
+        }
+
+
+    
+
+        /* Estilos para responsividade */
+        @media (max-width: 768px) {
+            nav {
+                display: block;
+                text-align: center;
+            }
+
+            .social-media {
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
+            }
+
+            .input-top,
+            .input-footer {
+                width: 100%;
+                margin: 5px 0;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .texto-home {
+                font-size: 1.5em;
+            }
+
+            section.section-home,
+            article {
+                text-align: center;
+            }
+        }
+
+
+
+        body {
+    font-family: rajdhani, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    overflow-x: hidden; /* Desativa o rolamento horizontal */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-info p {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.information-top {
+    margin-right: 15px;
+}
+
+.suggestions-list {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    display: none;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+.suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links a {
+    margin: 0 15px;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    
+}
+
+nav .nav-links a:hover {
+    color: #ff3f2e;
+}
+
+nav .input-top {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.nav-links a.active {
+    color: #FF5733; /* Cor para a opção ativa, ajuste conforme necessário */
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #333; /* Cor normal */
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
+
+#maria-grande {
+    max-width: 100%;
+    height: auto;
+  }
+ /* A imagem original */
+ .colors {
+    max-width: 60%;
+    height: auto;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efeito quando o mouse passar sobre a imagem */
+#colors:hover {
+    opacity: 0.5; /* Diminui a opacidade */
+    background-color: rgba(255, 255, 255, 0.5); /* Aplica um tom de branco */
+}
+  
+
+.texto-home {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    
+}
+.logo p {
+    font-size: 50px; /* Ajuste o valor para o tamanho desejado */
+  }
+  
+
+
+.paragrafo-home {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+.section-home {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.question-main{
+    font-size: 25px;
+}
+.question:hover{
+    color: #ff3f2e;
+}
+
+
+.texto{
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+aside {
+    margin-top: 50px;
+    background-color: #222222;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input.input-footer {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    color: #ff3f2e;
+}
+
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+.section-footer {
+    background-color: #222222;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.paragrafo-footer {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.question-footer {
+    color: #bbb;
+    margin-top: 10px;
+    display: block;
+}
+
+.question-footer:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* Ajustes para telas maiores que 768px (tablet e desktop) */
+.container-title-coloracion-personal {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.title-coloracion-personal {
+    font-size: 5em;
+    text-align: left;
+    margin-left: 200px;
+}
+
+.paragraph-coloracion-personal {
+    text-align: left;
+    margin-top: -20px;
+    margin-left: 200px;
+    font-size: 2em;
+}
+
+.sub-paragraph-coloracion-personal {
+    text-align: left;
+    margin-left: 200px;
+    font-size: 1.5em;
+}
+
+.sub-paragraph-coloracion-personal::before {
+    content: "✔"; /* Símbolo de verificação */
+    display: inline-block;
+    width: 24px; /* Tamanho do círculo */
+    height: 24px; /* Tamanho do círculo */
+    border-radius: 50%; /* Cria o círculo */
+    background-color: rgb(44, 44, 44); /* Cor de fundo do círculo */
+    color: white; /* Cor do símbolo */
+    text-align: center; /* Alinha o símbolo ao centro */
+    line-height: 24px; /* Centraliza verticalmente o símbolo */
+    font-size: 18px; /* Tamanho do símbolo de verificação */
+    margin-right: 8px; /* Espaçamento entre o símbolo e o texto */
+}
+
+.video-container-coloracion-personal {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.video-container-coloracion-personal iframe {
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    aspect-ratio: 16/9;
+}
+
+.sub-titulo-coloracion-personal {
+    text-align: left;
+    margin-left: 200px;
+    font-size: 1.4em;
+    margin-top: 25px;
+}
+
+.sub-titulo-2-coloracion-personal {
+    text-align: left;
+    margin-left: 200px;
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+.sub-paragrafo-coloracion-personal {
+    text-align: justify;
+    width: 60%;
+    margin-left: 200px;
+    font-size: 1.2em;
+    color: #303030;
+    margin-bottom: 50px;
+}
+
+.conteiner-main-precios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background-color: #eeeeee;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+.conteiner-precios {
+    text-align: center;
+    margin: 0 20px;
+    font-size: 35px;
+}
+
+.botao-precios {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #050505;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-precios:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#title-personal-2 {
+    font-size: 3.5em;
+    font-weight: lighter;
+}
+
+#paragraph-personal-2 {
+    font-size: 1.8em;
+    font-weight: lighter;
+}
+
+.metedologia-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.metedologia-image {
+    width: 295px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.dudas-coloracion-personal-container {
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 200px;
+}
+
+.paragraph-coloracion-personal-dudas {
+    font-size: 0.8em;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-weight: lighter;
+    text-align: left;
+    margin-left: 5px;
+    width: 90%;
+    text-align: justify;
+}
+
+.img-grande {
+    margin-left: 50px;
+}
+
+/* Media Queries para telas menores */
+
+@media (max-width: 1024px) {
+    .title-coloracion-personal {
+        font-size: 4em;
+        margin-left: 100px;
+    }
+
+    .paragraph-coloracion-personal {
+        font-size: 1.8em;
+        margin-left: 100px;
+        width: 85%; /* Ajusta a largura para não "comer" o texto */
+    }
+
+    .sub-paragraph-coloracion-personal {
+        font-size: 1.3em;
+        margin-left: 100px;
+        width: 85%; /* Ajusta a largura para não "comer" o texto */
+    }
+
+    .sub-titulo-coloracion-personal,
+    .sub-titulo-2-coloracion-personal {
+        margin-left: 100px;
+    }
+
+    .sub-paragrafo-coloracion-personal {
+        width: 80%;
+        margin-left: 100px;
+    }
+
+    .conteiner-main-precios {
+        flex-direction: column; /* Coloca os itens na vertical */
+        height: auto;
+    }
+
+    .conteiner-precios {
+        font-size: 25px;
+        margin: 10px 0;
+    }
+
+    .video-container-coloracion-personal iframe {
+        height: 400px;
+    }
+
+    .metedologia-image {
+        width: 250px;
+        height: 150px;
+    }
+
+    .dudas-coloracion-personal-container {
+        margin-left: 10px;
+        font-size: 1.5em;
+    }
+
+    .paragraph-coloracion-personal-dudas {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .img-grande {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-coloracion-personal {
+        font-size: 3em;
+        margin-left: 50px;
+    }
+
+    .paragraph-coloracion-personal {
+        font-size: 0.8em;
+        margin-left: 50px;
+        width: 90%; /* Ajusta a largura para não "comer" o texto */
+    }
+
+    .sub-paragraph-coloracion-personal {
+        font-size: 0.7em;
+        margin-left: 50px;
+        width: 90%; /* Ajusta a largura para não "comer" o texto */
+    }
+
+    .sub-paragraph-coloracion-personal::before{
+        width: 15px;
+        height: 15px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    
+
+
+    .video-container-coloracion-personal {
+        margin-top: 20px;
+        text-align: left; /* Alinha o vídeo à esquerda */
+        margin-left: 50px; /* Retira a margem esquerda */
+    }
+
+    .video-container-coloracion-personal iframe {
+        width: 100%; /* O vídeo vai ocupar toda a largura disponível */
+        max-width: 100%; /* Sem limite de largura */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+
+    .sub-titulo-coloracion-personal,
+    .sub-titulo-2-coloracion-personal {
+        margin-left: 50px;
+        font-size: 1.5em;
+    }
+
+    .sub-paragrafo-coloracion-personal {
+        width: 80%;
+        text-align: justify;
+        text-align: left;
+        margin-left: 50px;
+        font-size: 1em;
+    }
+
+    .conteiner-main-precios {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .conteiner-precios {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    #title-personal-2{
+        font-size: 1.5em;
+        font-weight: lighter;
+        margin-bottom: 15px;
+    }
+
+    #paragraph-personal-2{
+        font-size: 0.9em;
+        
+        
+    }
+
+
+    .metedologia-container{
+        margin-left: 20px;
+        margin-top: -30px;
+    }
+
+.metedologia-image {
+        width: 130px;
+        height: 120px;
+    }
+
+
+
+    
+
+    
+
+    .dudas-coloracion-personal-container {
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+
+    .paragraph-coloracion-personal-dudas {
+        font-size: 0.9em;
+        width: 90%;
+    }
+    
+
+    .img-grande {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-coloracion-personal {
+        font-size: 3em;
+        margin-left: 50px;
+    }
+
+    .paragraph-coloracion-personal {
+        font-size: 0.8em;
+        margin-left: 50px;
+        width: 90%; /* Ajusta a largura para não "comer" o texto */
+    }
+
+    .sub-paragraph-coloracion-personal {
+        font-size: 0.7em;
+        margin-left: 50px;
+        width: 90%; /* Ajusta a largura para não "comer" o texto */
+    }
+
+    .sub-paragraph-coloracion-personal::before{
+        width: 15px;
+        height: 15px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .sub-titulo-coloracion-personal,
+    .sub-titulo-2-coloracion-personal {
+        margin-left: 50px;
+        font-size: 1.5em;
+    }
+
+    .sub-paragrafo-coloracion-personal {
+        width: 80%;
+        text-align: justify;
+        text-align: left;
+        margin-left: 50px;
+        font-size: 1em;
+    }
+
+    .conteiner-precios {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    #title-personal-2{
+        font-size: 2.3em;
+        font-weight: lighter;
+        margin-bottom: 15px;
+    }
+
+    #paragraph-personal-2{
+        font-size: 0.9em;
+        
+        
+    }
+
+
+
+    .metedologia-container{
+        margin-left: 20px;
+        margin-top: -30px;
+    }
+
+.metedologia-image {
+        width: 130px;
+        height: 120px;
+    }
+
+    .video-container-coloracion-personal {
+        margin-top: 20px;
+        text-align: left; /* Alinha o vídeo à esquerda */
+        margin-left: 50px; /* Retira a margem esquerda */
+    }
+
+    .video-container-coloracion-personal iframe {
+        width: 100%; /* O vídeo vai ocupar toda a largura disponível */
+        max-width: 100%; /* Sem limite de largura */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .metedologia-image {
+        width: 150px;
+        height: 100px;
+    }
+
+    .dudas-coloracion-personal-container {
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+
+    .paragraph-coloracion-personal-dudas {
+        font-size: 0.9em;
+        width: 90%;
+    }
+
+    .img-grande {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <div class="header-info">
+            <p>Sanarate, El Progreso - Guatemala</p>
+            <p>
+                <a class="information-top" href="tel:+50255135773"><img src="image/telefone.png" class="social-media-telefone" alt="telefone"> (502) 5513-5773</a>
+            </p>
+            
+                <a class="information-top" href="https://facebook.com"><img class="social-media" src="image/facebook-icon.ico" alt="facebook"></a>
+                <a class="information-top" href="https://instagram.com"><img class="social-media" src="image/instagram-logo.png" alt="instagram"></a>
+                <a class="information-top" href="https://twitter.com"><img class="social-media" src="image/twitter.webp" alt="x"></a>
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <p>María Grande</p>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="mariagrande.html">Asesoria de imagen</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactos.html">Contacto</a>
+        </div>
+        <input class="input-top" type="text" id="search" name="search" placeholder="Buscar..." autocomplete="off">
+        <ul id="suggestions" class="suggestions-list"></ul>
+    </nav>
+
+
+
+
+
+    <main>
+
+       
+
+
+        <div class="container-title-coloracion-personal">
+            <h1 class="title-coloracion-personal">
+
+                Coloración Personal
+
+
+            </h1>
+
+            <p class="paragraph-coloracion-personal">
+
+                ¡DESCUBRE LOS COLORES EN TU CARRITO Y <b>VALORA TU BELLEZA NATURAL!</b>
+
+
+            </p>
+
+
+            <p class="sub-paragraph-coloracion-personal">
+
+                Consultoría Presencial
+            </p>
+
+
+
+            <div class="video-container-coloracion-personal">
+            <iframe src="https://www.youtube.com/embed/9i3vEnQP3OY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="container-sub-titulo-coloracion-personal">
+
+            <h2 class="sub-titulo-coloracion-personal">
+                PRIMER PRINCIPIO DE LA CONSULTORÍA DE IMAGEN
+            </h2>
+
+            <h3 class="sub-titulo-2-coloracion-personal">
+                ¡Duplica quién eres y vuélvete más bella!
+            </h3>
+
+
+
+            <p class="sub-paragrafo-coloracion-personal">
+
+                ¡¿Alguna vez te has parado a pensar que todo en ti realza tu belleza?! <br> <br>
+
+ 
+
+                Exactamente lo que ocurre en Personal Coloring, un estudio en el que analizamos nuestros colores naturales, como la piel, los ojos y el cabello. <br> <br>
+
+ 
+
+                ¿Recuerdas ese lápiz labial que a tu amiga le quedó hermoso pero a ti no? Esto tiene una explicación. <br> <br>
+
+ 
+
+                Eres hermosa pase lo que pase, pero siempre habrá ese día en el que luzcas deslumbrante. Está claro que algunos colores resaltan su belleza, mientras que otros no. Esto se aplica a tu ropa, cabello, accesorios y maquillaje. Y puedes encontrar esta explicación en coloración personal. <br> <br>
+ 
+ 
+
+                Conocer los colores que te favorecen te da mayor seguridad en tus elecciones. Tu carta de colores será una guía para compras más asertivas y para un armario funcional donde combinen todas las piezas. 
+            </p>
+        </div>
+
+
+
+
+            
+        <div class="conteiner-main-precios">
+            <div class="conteiner-precios">
+                <p><strong>INDIVIDUAL</strong></p>
+                <p>Desde</p>
+                <p><strong>US$ 78.00</strong></p>
+                <a href="https://wa.me/+50255135773" target="_blank"><button class="botao-precios">Agenda ahora!</button></a>
+            </div>
+        
+            <div class="conteiner-precios">
+                <p><strong>DUPLA</strong></p>
+                <p>Desde</p>
+                <p><strong> US$ 70.00</strong></p>
+                <a href="https://wa.me/+50255135773" target="_blank"><button class="botao-precios">Agenda ahora!</button></a>
+            </div>
+        
+            <div class="conteiner-precios">
+                <p><strong>COLOR DAY</strong></p>
+                <p>Desde</p>
+                <p><strong>US$ 50.00</strong></p>
+                <a href="https://wa.me/+50255135773" target="_blank"><button class="botao-precios">Agenda ahora!</button></a>
+            </div>
+        </div>
+
+
+
+        <div class="container-title-coloracion-personal">
+            <h1 id="title-personal-2" class="title-coloracion-personal">
+
+                Metodología de colorimetría
+
+
+            </h1>
+
+            <p id="paragraph-personal-2" class="paragraph-coloracion-personal">
+
+                LA PRUEBA ES PRESENCIAL Y UNO DE NUESTROS CONSULTANTES IRA AL LUGAR QUE ELIJAS.
+
+            </p>
+            </div>
+
+            <div class="metedologia-container">
+
+                <img class="metedologia-image" src="image/asesoria-de-image/paleta-de-cores-mulher-ao-fundo.jpg" alt="paleta-de-colores-mujer-al-fondo">
+                <img class="metedologia-image" src="image/asesoria-de-image/paleta-de-cores.jpg" alt="paleta-de-colores">
+                <img class="metedologia-image" src="image/asesoria-de-image/peleta-de-cores-na-mao.jpg" alt="paleta-de-colores-en-la-mano">
+
+            </div>
+
+
+
+
+            <div class="container-title-coloracion-personal">
+                <h1 id="title-personal-2" class="title-coloracion-personal">
+    
+                    Preguntas o inquietudes frecuentes sobre la coloración personal:
+    
+    
+                </h1>
+
+
+                </div>
+
+
+
+                <div class="dudas-coloracion-personal-container">
+
+                    <h4 class="dudas-coloracion-personal-titles">
+                        1. ¿Qué es la coloración personal o el análisis del color?
+
+
+                    </h4>
+
+                    <p class="paragraph-coloracion-personal-dudas">
+
+                        La coloración personal o análisis de color es un servicio de asesoría de imagen, en el que conoceremos los colores que más valoran, que más realzan la belleza natural de nuestra clienta. Ayudándole a tomar decisiones más asertivas y seguras. En esta consultoría analizaremos la temperatura, intensidad y profundidad de la piel, ojos y cabello (cuando sea natural) para determinar los colores que mejor armonicen con este cliente.
+
+
+                    </p>
+
+                    <h4 class="dudas-coloracion-personal-titles">
+                        2. Cómo descubrir mi carta de colores:
+
+
+                    </h4>
+
+                    <p class="paragraph-coloracion-personal-dudas">
+
+                        Para descubrir su paleta de colores, es necesario realizar un análisis de color o una coloración personal. Todo lo que tienes que hacer es elegir un consultor de tu preferencia.  Inicialmente, la consultora realizará una clase de color, en la que explicará la técnica utilizada en la coloración, la psicología de los colores y cómo combinar colores de una manera más segura y asertiva. Después realizará una prueba de color personal y finalmente la asesora te entregará la carta de colores y te explicará cómo puedes utilizar todos estos colores, en tu ropa, cabello, maquillaje e incluso accesorios. Además de explicarte cómo utilizar los colores que te encantan y que no están en tu paleta.
+
+
+                    </p>
+
+                    <h4 class="dudas-coloracion-personal-titles">
+                        3. ¿Cuáles son las cartas de colores?
+
+
+                    </h4>
+
+                    <p class="paragraph-coloracion-personal-dudas">
+
+                        El método estacional ampliado es el que utilizamos aquí en Resolva Meu Look, tenemos 12 cartas de colores con sus respectivas características principales que cariñosamente llamamos claro, oscuro, suave, brillante, cálido y frío. En otras palabras: invierno frío, invierno oscuro e invierno brillante. Primavera cálida, primavera clara y primavera brillante. Verano brillante, verano suave y verano frío. Otoño cálido, otoño oscuro y otoño suave.
+
+                        </p>
+
+
+                        <h4 class="dudas-coloracion-personal-titles">
+                            4. ¿Puedo realizar el examen solo?
+    
+    
+                        </h4>
+    
+                        <p class="paragraph-coloracion-personal-dudas">
+
+                            Si bien actualmente encontramos pruebas de análisis de color en línea o en libros, es muy recomendable que el análisis sea realizado por un profesional calificado, quien podrá identificar matices y realizar ajustes precisos para determinar los colores que más realzan tu apariencia de una manera más asertiva.
+
+                            </p>
+
+
+                            <h4 class="dudas-coloracion-personal-titles">
+                                5. Cómo saber mis principales características:
+        
+        
+                            </h4>
+        
+                            <p class="paragraph-coloracion-personal-dudas">
+
+                                Durante el proceso de coloración personal, la Consultora le explicará sus principales características: es decir, si luce mejor en colores claros u oscuros (profundidad), en colores intensos o suaves (intensidad), en colores cálidos, fríos o neutros (temperatura).  Estas son las características que realzarán tu belleza natural (cuando se usan correctamente) para que te sientas más segura a la hora de adquirir el maquillaje ideal. ¿Alguna vez te ha encantado el lápiz labial de una amiga y cuando lo compraste no te gustó, probablemente porque las características de tu piel y en consecuencia tu paleta de colores no son las mismas que las de tu amiga? Ahora no volverás a cometer ese error.
+
+
+                                </p>
+
+
+
+
+
+                    
+
+
+
+
+                </div>
+
+
+
+                <img class="img-grande" src="image/asesoria-de-image/paleta-de-cores-foto-grande.jpg" alt="paleta-de-colores-mujer">
+
+                
+
+
+            
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+        <a href="https://www.instagram.com/celestitch_?igsh=dnU5ZjczNWVkNXhp" target="_blank"><img src="image/icon-footer/instagram.png" alt="instagram-icon" id="imagem-fixada">
+        </a>
+        <a href="#" target="_blank"><img src="image/icon-footer/twitter.png" alt="twitter-icon" id="imagem-fixada-2">
+        
+        </a>
+    
+        <a href="https://wa.me/+50255135773" target="_blank"><img src="image/icon-footer/whatssap.png" alt="whatssap" id="imagem-fixada-3">
+        
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+    <footer>
+        <p>© 2025 María Grande | Consultoria de Imagem e Estilo</p>
+        <a href="#">Política de Privacidade</a>
+    </footer>
+    
+    <script src="asesoria-maria.js"></script>
+    
+    </body>
+    </html>
