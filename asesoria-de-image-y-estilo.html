@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asesoria de image y estilo</title>
+    <title> | Asesoria de imagen y estilo</title>
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -12,54 +12,21 @@
             src: url(fonts/Rajdhani-Regular.ttf) format("truetype");
             font-family: rajdhani, Helvetica, sans-serif;
         }
-
-
-    
-
-        /* Estilos para responsividade */
-        @media (max-width: 768px) {
-            nav {
-                display: block;
-                text-align: center;
-            }
-
-            .social-media {
-                width: 30px;
-                height: 30px;
-                margin: 0 5px;
-            }
-
-            .input-top,
-            .input-footer {
-                width: 100%;
-                margin: 5px 0;
-                padding: 10px;
-                box-sizing: border-box;
-            }
-
-            .texto-home {
-                font-size: 1.5em;
-            }
-
-            section.section-home,
-            article {
-                text-align: center;
-            }
-        }
+        
 
         .asesoria-de-image {
     width: 80%; /* Define a largura do container */
     margin-left: 10%; /* Posiciona o container mais à esquerda, sem ser no extremo */
 }
 
-.titulo-acesoria-de-image, .paragraph-asesoria-de-image {
-    font-size: 36px; /* Tamanho de fonte do título */
+ .paragraph-asesoria-de-image {
+    font-size: 1.3em; /* Tamanho de fonte do título */
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove qualquer padding */
 }
 
 .titulo-acesoria-de-image {
-    font-size: 80px;
+    font-size: 5em;
     text-align: left;
     margin-left: 50px;
 }
@@ -153,51 +120,59 @@
 
 
 
-@media screen and (max-width: 1200px) {
-    .asesoria-de-image {
-        width: 90%;
-        margin-left: 5%;
-    }
 
-    .titulo-acesoria-de-image {
-        font-size: 70px;
-        margin-left: 30px;
-    }
 
-    .paragraph-asesoria-de-image {
-        font-size: 18px;
-        margin-left: 30px;
-    }
+        /* Estilos para responsividade */
+        @media (max-width: 768px) {
+            nav {
+                display: block;
+                text-align: center;
+            }
 
-    .container-asesoria-de-image {
-        justify-content: space-between;
-    }
+            .social-media {
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
+            }
 
-    .item-asesoria-de-image {
-        width: 45%;
-    }
+            .input-top,
+            .input-footer {
+                width: 100%;
+                margin: 5px 0;
+                padding: 10px;
+                box-sizing: border-box;
+            }
 
-    .botao-saber-mais {
-        padding: 15px 40px; /* Menor padding */
-        font-size: 16px;
-    }
-}
+            .texto-home {
+                font-size: 1.5em;
+            }
 
-@media screen and (max-width: 768px) {
-    .asesoria-de-image {
+            section.section-home,
+            article {
+                text-align: center;
+            }
+
+
+
+            .asesoria-de-image {
         width: 100%;
         margin-left: 0;
     }
 
     .titulo-acesoria-de-image {
-        font-size: 50px;
-        margin-left: 10px;
+        font-size: 3em;
+        margin-right: 5px;
     }
 
     .paragraph-asesoria-de-image {
         font-size: 16px;
-        margin-left: 10px;
+        margin-right: 5px;
         margin-bottom: 30px;
+    }
+
+
+    .image-asesoria-de-image{
+        width: 100%;
     }
 
     .container-asesoria-de-image {
@@ -215,24 +190,41 @@
         padding: 15px;
         font-size: 16px;
     }
-}
+
+     }
+
+
+
 
 @media screen and (max-width: 480px) {
     .titulo-acesoria-de-image {
-        font-size: 40px; /* Título menor para telas muito pequenas */
+        font-size: 2em;
+        margin-right: 1px;
     }
 
     .paragraph-asesoria-de-image {
-        font-size: 14px;
+        font-size: 16px;
+        margin-right: 1px;
+        margin-bottom: 30px;
+        text-align: justify;
+        width: 80%;
+    }
+
+
+    .image-asesoria-de-image{
+        width: 100%;
+        margin-right: 100px;
     }
 
     .item-asesoria-de-image {
-        width: 100%; /* Cada item ocupará 100% da largura */
+        width: 85%; /* Cada item ocupará 100% da largura */
+
     }
 
     .botao-saber-mais {
         padding: 10px 20px;
         font-size: 14px;
+        
     }
 }
 
@@ -326,7 +318,7 @@
                 <img class="image-asesoria-de-image" src="image/outfit/asesoria-de-imagen-y-estilo/mulher-com-celular-na-mao.jpg" alt="">
                 <h2 class="titulo-imagem">RESUELVE MI ESTILO</h2>
                 <p class="paragrafo-imagem">Descubre tus estilos y crea una estrategia de imagen</p>
-                <button class="botao-saber-mais">Saiba Mais</button>
+                <a href="resolver-mi-estilo.html"><button class="botao-saber-mais">Saiba Mais</button></a>
             </div>
         </div>
 

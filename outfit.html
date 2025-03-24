@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outfit</title>
+    <title>Outfit | María Grande | Asesoria de imagen y estilo</title>
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -12,6 +12,8 @@
             src: url(fonts/Rajdhani-Regular.ttf) format("truetype");
             font-family: rajdhani, Helvetica, sans-serif;
         }
+
+        
 
         /* Estilos para responsividade */
         @media (max-width: 768px) {
@@ -42,9 +44,75 @@
             article {
                 text-align: center;
             }
-        }
 
 
+            .title-outfit{
+              font-size: 2em;
+              margin-left: 40px;
+              text-align: center;
+            }
+
+            .noticias-tendencias{
+            text-align: left; /* Alinha o texto à esquerda */
+            margin-left: 50px; /* Ajusta a distância da borda esquerda */
+            margin-top: 50px;
+    
+  }
+
+
+  .noticias-tendencias {
+        margin-left: 30px; /* Ajusta o espaço à esquerda em telas menores */
+        margin-top: 30px;  /* Diminui o espaçamento superior */
+    }
+
+    .img-noticias {
+        display: flex;
+        flex-wrap: wrap; /* Permite que as imagens quebrem para a linha seguinte */
+        justify-content: center; /* Centraliza as imagens */
+    }
+
+    .imagem-item {
+        width: 45%; /* Ajusta a largura dos itens para 2 por linha */
+        margin-top: 20px;
+    }
+
+    .img-tendencias {
+        width: 100%; /* Faz a imagem ocupar toda a largura do item */
+        height: 180px;  /* Ajusta a altura das imagens */
+    }
+
+
+    .post-news{
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-bottom: -50px;
+    }
+
+    .video-box {
+        width: 40%;
+    }
+
+   
+    .video-box iframe {
+        height: 150px; /* Ajusta a altura dos vídeos para telas menores */
+        width: 100%; /* A largura ocupa 100% da caixa */
+    }
+  
+
+
+
+
+  
+
+ 
+
+  
+        
+        
+        
+        
+        
+          }
 
 
 
@@ -66,6 +134,69 @@
             .texto-home {
                 font-size: 1.2em;
             }
+
+
+            .noticias-tendencias {
+        margin-left: 10px; /* Ajusta o espaço à esquerda para telas pequenas */
+        margin-top: 20px;  /* Diminui o espaçamento superior */
+    }
+
+    .img-noticias {
+        display: flex;
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center;  /* Centraliza os itens */
+    }
+
+    .imagem-item {
+        width: 90%; /* Aumenta a largura do item para ocupar mais a tela */
+        margin-top: 10px;
+    }
+
+    .img-tendencias {
+        width: 100%; /* A imagem ocupa toda a largura do item */
+        height: 150px;  /* Ajusta a altura para ficar mais proporcional */
+    }
+
+    .titulo-outfit {
+        font-size: 1.2em;  /* Diminui um pouco o tamanho do título */
+    }
+
+    .descricao-outfit {
+        font-size: 0.9em;  /* Diminui o tamanho da descrição */
+    }
+
+
+
+    .post-news{
+      margin-top: 50px;
+      margin-left: 30px;
+      margin-bottom: -30px;
+    }
+
+
+
+    .main-box-videos {
+        justify-content: center; /* Centraliza os vídeos */
+        margin-top: 20px;
+    }
+
+    .video-box {
+        width: 90%; /* Os vídeos ocupam 90% da largura da tela em dispositivos móveis */
+        margin-bottom: 15px; /* Reduz o espaçamento entre os vídeos */
+        text-align: center; /* Mantém o texto centralizado */
+    }
+
+    .video-box iframe {
+        height: 200px; /* Ajusta a altura dos vídeos para telas menores */
+        width: 100%; /* A largura ocupa 100% da caixa */
+    }
+
+    .video-title {
+        font-size: 1em; /* Diminui o tamanho da fonte para dispositivos móveis */
+    }
+    
+
+
         }
     </style>
 </head>
@@ -114,7 +245,7 @@
             </div>
           </div>
 
-          <h1 class="noticias-tendencias">Mais novas</h1>
+          <h1 class="post-news">Más nuevas</h1>
 
           <div class="post-noticias">
 
@@ -224,7 +355,7 @@
 
 
 
-            <h1 class="noticias-tendencias">
+            <h1 class="post-news">
                 MASCULINO</h1>
 
 
@@ -260,7 +391,7 @@
 
 
 
-                  <h1 class="noticias-tendencias">
+                  <h1 class="post-news">
                     TENDENCIAS</h1>
 
 
@@ -355,9 +486,9 @@
     </main>
 
     <footer>
-        <p>© 2025 María Grande | Consultoria de Imagem e Estilo</p>
-        <a href="#">Política de Privacidade</a>
-    </footer>
+      <p>© 2025 María Grande | Asesoria de Imagen y Estilo</p>
+      <a href="#">Política de Privacidad</a>
+  </footer>
 
     <script src="asesoria-maria.js"></script>
     
