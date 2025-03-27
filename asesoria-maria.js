@@ -196,3 +196,63 @@ function closeLightbox() {
     const lightbox = document.getElementById('lightbox');
     lightbox.style.display = 'none'; // Oculta o lightbox
 }
+
+
+
+
+
+
+// Lista de sugestões
+const suggestions = [
+    'Consultoria de Imagem',
+    'Estilo pessoal',
+    'Serviços para empresas',
+    'Cursos online',
+    'Imagem corporativa',
+    'Consultoria para eventos',
+    'Tendências de moda',
+    'Consultoria em estilo',
+    'Estilo de vida saudável'
+];
+
+// Acessa os elementos de busca e lista de sugestões
+const searchInput = document.getElementById('search');
+const suggestionsList = document.getElementById('suggestions');
+
+// Função que lida com a digitação no campo de busca
+searchInput.addEventListener('input', function() {
+    const query = searchInput.value.toLowerCase(); // Texto da pesquisa em minúsculo
+    suggestionsList.innerHTML = ''; // Limpa as sugestões anteriores
+
+    // Se a consulta tiver pelo menos um caractere, começa a filtrar
+    if (query.length > 0) {
+        const filteredSuggestions = suggestions.filter(item =>
+            item.toLowerCase().includes(query) // Filtra com base no texto digitado
+        );
+
+        // Adiciona as sugestões filtradas à lista
+        filteredSuggestions.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            suggestionsList.appendChild(li);
+
+            // Quando clicar na sugestão, preenche o campo de busca com o item
+            li.addEventListener('click', function() {
+                searchInput.value = item;
+                suggestionsList.innerHTML = ''; // Limpa as sugestões
+                suggestionsList.style.display = 'none'; // Fecha a lista
+            });
+        });
+
+        suggestionsList.style.display = 'block'; // Exibe a lista de sugestões
+    } else {
+        suggestionsList.style.display = 'none'; // Se o campo de busca estiver vazio, esconde a lista
+    }
+});
+
+// Fechar a lista de sugestões quando clicar fora do campo de busca
+document.addEventListener('click', function(event) {
+    if (!searchInput.contains(event.target) && !suggestionsList.contains(event.target)) {
+        suggestionsList.style.display = 'none'; // Esconde a lista se clicar fora
+    }
+});

@@ -29,25 +29,19 @@ document.getElementById('submitBtn').addEventListener('click', function() {
 
 
 
-document.getElementById('search').addEventListener('keydown', function(event) {
-    // Verifica se a tecla pressionada é "Enter"
-    if (event.key === 'Enter') {
-        event.preventDefault(); // Previne o comportamento padrão de envio do formulário
 
-        // Obtém o valor digitado no campo de pesquisa
-        var searchQuery = event.target.value.toLowerCase().trim(); // Tornar tudo minúsculo para comparação
 
-        // Tenta encontrar uma seção correspondente ao valor da pesquisa
-        var section = document.querySelector(`#${searchQuery}`);
 
-        // Se a seção foi encontrada, faz o scroll até ela
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            alert('Seção não encontrada!'); // Caso não encontre a seção
-        }
-    }
-});
+
+
+
+
+
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     // Captura todos os links "Saiba mais"
