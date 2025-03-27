@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3 pasos iniciales</title>
+    <title>3 pasos iniciales | Maternidad | María Grande</title>
     <link rel="stylesheet" href="style.css">
 
     <style>
+    
+    @font-face {
+            font-family: rajdhani;
+            src: url(fonts/Rajdhani-Regular.ttf) format("truetype");
+            font-family: rajdhani, Helvetica, sans-serif;
+        }
 
 
 body{
@@ -86,72 +92,8 @@ body{
 
 
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    /* Ajustando o tamanho da fonte para telas menores */
-    .tendencia-jeans-h1 {
-        font-size: 1.8em;
-    }
-
-    .paragrafo-jeans-sobre-jeans {
-        font-size: 1em;  /* Ajusta o tamanho da fonte para telas menores */
-    }
-
-    /* Ajustando o tamanho da imagem e a navegação para telas menores */
-    .image-container-tendencias {
-        height: 300px; /* Reduz a altura das imagens em telas menores */
-    }
-
-    .tendencias-img {
-        width: 160%; /* Aumenta um pouco a largura para que as imagens ainda sejam visíveis */
-    }
-
-    /* Ajuste no tamanho das setas para telas pequenas */
-    .seta {
-        font-size: 25px;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Ajustando ainda mais para dispositivos muito pequenos */
-    .tendencia-jeans-h1 {
-        font-size: 1.5em;  /* Diminui ainda mais o tamanho do título */
-    }
-
-    .paragrafo-jeans-sobre-jeans {
-        font-size: 0.9em;  /* Reduz o tamanho da fonte */
-    }
-
-    .image-container-tendencias {
-        height: 250px; /* Mais redução na altura das imagens em telas muito pequenas */
-    }
-
-    .tendencias-img {
-        width: 170%; /* Aumenta a largura da imagem ainda mais em telas muito pequenas */
-    }
-
-    .seta {
-        font-size: 20px; /* Diminui o tamanho das setas para telas menores */
-        padding: 5px;
-    }
-}
-
-
-
-
-
-
-
-
-        @font-face {
-            font-family: rajdhani;
-            src: url(fonts/Rajdhani-Regular.ttf) format("truetype");
-            font-family: rajdhani, Helvetica, sans-serif;
-        }
-
-        /* Estilos para responsividade */
-        @media (max-width: 768px) {
+ /* Estilos para responsividade */
+ @media (max-width: 768px) {
             nav {
                 display: block;
                 text-align: center;
@@ -179,7 +121,103 @@ body{
             article {
                 text-align: center;
             }
+
+
+
+
+            .main-consejos {
+        flex-direction: column;  /* Organiza o layout em coluna em vez de linha */
+        padding: 10px;
+    }
+    
+    .tendencia-jeans-h1{
+        font-size: 1.5em;
+    }
+
+
+    .paragrafo-jeans-sobre-jeans{
+        width: 97%;
+        
+    }
+
+    /* Ajusta o conteúdo à esquerda para ocupar 100% da largura */
+    .text-content {
+        flex: 1 1 100%;  /* Faz com que a coluna à esquerda ocupe 100% */
+        padding-right: 0;
+        margin-bottom: 20px;  /* Espaço inferior entre as seções */
+    }
+
+    /* Ajuste na coluna da direita (imagem e textos) */
+    .image-right {
+        display: flex;
+        flex-direction: column; /* Coloca os itens (imagem e textos) em uma coluna */
+        align-items: center; /* Centraliza os itens */
+        width: 100%; /* A largura ocupa 100% da tela */
+        padding: 10px; /* Adiciona algum padding para garantir espaço */
+    }
+
+   
+
+    /* Ajuste para o título e parágrafo da direita */
+    .additional-title, .additional-paragraph {
+        width: 90%;  /* Ajusta a largura para 100% */
+        text-align: justify;  /* Centraliza o texto */
+        font-size: 1.3em;  /* Reduz o tamanho da fonte */
+        margin-bottom: 15px; /* Espaço entre os textos */
+    }
+
+    .additional-title {
+        font-size: 1.5em; /* Mantém o título com um tamanho maior */
+        margin-top: 20px; /* Garantindo espaço entre a imagem e o título */
+    }
+
+    .additional-paragraph {
+        font-size: 1.1em; /* Ajusta o tamanho da fonte do parágrafo */
+        line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
+    }
+
+    /* Ajustes nos títulos */
+    .title-consejos {
+        font-size: 1.8em;  /* Ajusta o tamanho do título principal */
+        margin-bottom: 15px;
+    }
+
+    .title-consejos-sub {
+        font-size: 1.2em;  /* Tamanho menor para os subtítulos */
+        margin: 20px 0;
+    }
+
+    /* Ajustes nos parágrafos */
+    .paragraph-consejos,
+    .paragraph-consejos-decripcion {
+        font-size: 1em;  /* Ajusta o tamanho da fonte para parágrafos */
+        line-height: 1.4;  /* Ajusta o espaçamento entre linhas */
+    }
+
+    /* Ajuste no tamanho das imagens */
+    .img-tendencias {
+        width: 100%;  /* Faz as imagens ocuparem toda a largura disponível */
+        height: auto;  /* Mantém a proporção das imagens */
+    }
+
+    /* Ajuste nos itens de notícias */
+    .imagem-item {
+        width: 100%;  /* Faz os itens de notícias ocuparem 100% */
+        margin-top: 0;
+    }
+
+    .image-container-tendencias{
+        width: 500px;
+        height: 290px;
+    }
+
+
+
+
+
         }
+
+
 
         @media (max-width: 480px) {
             .social-media {
@@ -190,7 +228,34 @@ body{
             .texto-home {
                 font-size: 1.2em;
             }
+
+
+            .tendencia-jeans-h1{
+        font-size: 1.5em;
+    }
+
+
+    .image-container-tendencias{
+        width: 400px;
+        height: 170px;
+    }
+
+
+    .additional-title, .additional-paragraph {
+        width: 98%;  /* Ajusta a largura para 100% */
+        text-align: justify;  /* Centraliza o texto */
+        font-size: 1em;  /* Reduz o tamanho da fonte */
+        margin-bottom: 15px; /* Espaço entre os textos */
+        margin-right: 20px;
+    }
+
+
         }
+
+
+       
+
+      
     </style>
 </head>
 <body>
@@ -347,7 +412,7 @@ body{
             </div>
         
             <div class="image-right">
-                <img src="image/outfit/mulher-no-computador.jpg" alt="mujer-en-la-computadora">
+                <img src="image/maria-celeste-grande.JPG" alt="maria-grande">
         
                 <!-- Novo título e parágrafo abaixo da imagem, na mesma coluna -->
                 <h3 class="title-consejos additional-title">Blog de moda</h3>

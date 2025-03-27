@@ -138,12 +138,12 @@ main {
 
 .texto-home {
  
-  background-image: url('image/maria\ celeste\ -grande.JPG');
-  background-size: 50% auto; /* Ajusta a largura da imagem para 100% e mantém a proporção */
+  background-image: url('image/grey-background.jpg');
+  background-size: 100% auto; /* Ajusta a largura da imagem para 100% e mantém a proporção */
   background-position: left center; /* A imagem começa no canto esquerdo */
   background-attachment: fixed; /* A imagem de fundo fica fixa enquanto a página rola */
   color: rgb(240, 240, 240); /* Cor do texto */
-  padding: 150px 15px; /* Ajuste o padding para definir a altura do título */
+  padding: 100px 15px; /* Ajuste o padding para diminuir a altura */ /* Ajuste o padding para definir a altura do título */
   text-align: left;
    /* Ajusta o afastamento à esquerda */
   position: relative; /* Permite que a imagem role enquanto o título permanece no lugar */
@@ -1037,11 +1037,11 @@ html, body {
     display: flex;
     justify-content: flex-start; /* Garante que o conteúdo começa do lado esquerdo */
     align-items: flex-start; /* Alinha os itens no topo */
-    margin: 30px;
     width: 100%; /* Garante que o layout ocupe toda a largura disponível */
-    font-size: 1.5em; /* Tamanho menor para o segundo título */
+    font-size: 1.4em; /* Tamanho menor para o segundo título */
     text-align: left; /* Alinha o texto à esquerda */
     padding-left: 0; /* Garante que o conteúdo comece exatamente do lado esquerdo */
+    margin-bottom: 20px;
 }
 
 

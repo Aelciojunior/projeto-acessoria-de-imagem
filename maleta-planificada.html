@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resolver mi estilo | María Grande</title>
+    <title>Maleta Planificada | María Grande</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
         @font-face {
@@ -250,16 +251,11 @@ footer {
 
 
 
-
-
-
-
-/* Ajustes para telas maiores que 768px (tablet e desktop) */
-
 .title-coloracion-personal {
     font-size: 5em;
     text-align: left;
     margin-left: 200px;
+    
 }
 
 .paragraph-coloracion-personal {
@@ -267,7 +263,9 @@ footer {
     margin-top: -20px;
     margin-left: 200px;
     font-size: 2em;
+    width: 80%;
 }
+
 
 .sub-paragraph-coloracion-personal {
     text-align: left;
@@ -289,41 +287,60 @@ footer {
     margin-right: 8px; /* Espaçamento entre o símbolo e o texto */
 }
 
-.video-container-coloracion-personal {
-    margin-top: 20px;
-    text-align: center;
-    margin-left: 100px;
-}
-
-.video-container-coloracion-personal iframe {
-    width: 100%;
-    max-width: 1000px;
-    height: 600px;
-    aspect-ratio: 16/9;
-}
 
 .sub-titulo-coloracion-personal {
     text-align: left;
-    margin-left: 200px;
-    font-size: 1.4em;
+    margin-left: 240px;
+    font-size: 1.6em;
     margin-top: 25px;
+    width: 60%;
+    font-weight: lighter;
 }
 
 .sub-titulo-2-coloracion-personal {
     text-align: left;
-    margin-left: 200px;
-    font-size: 3em;
-    font-weight: lighter;
+    margin-left: 240px;
+    font-size: 2.3em;
+    font-weight: bold;
+    width: 70%;
 }
 
 .sub-paragrafo-coloracion-personal {
     text-align: justify;
-    width: 60%;
-    margin-left: 200px;
-    font-size: 1.2em;
+    width: 57%;
+    margin-left: 250px;
+    font-size: 1.5em;
     color: #303030;
     margin-bottom: 50px;
 }
+
+
+
+#maleta-title{
+    font-size: 3em;
+    font-weight: bold;
+    width: 57%;
+    margin-left: 250px;
+    text-align: justify;
+    opacity: 0.9;
+    margin-top: -50px;
+}
+
+
+#maleta-sub-title{
+    font-size: 2.5em;
+    font-weight: bold;
+    width: 100%;
+    text-align: justify;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
 
 .conteiner-main-precios {
     display: flex;
@@ -369,42 +386,6 @@ footer {
     font-weight: lighter;
 }
 
-.metedologia-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.metedologia-image {
-    width: 295px;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-.dudas-coloracion-personal-container {
-    font-size: 1.8em;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 200px;
-}
-
-.paragraph-coloracion-personal-dudas {
-    font-size: 0.8em;
-    margin-top: 5px;
-    margin-bottom: 50px;
-    font-weight: lighter;
-    text-align: left;
-    margin-left: 5px;
-    width: 90%;
-    text-align: justify;
-}
-
-
 
 /* Media Queries para telas menores */
 
@@ -443,63 +424,183 @@ footer {
 
 
 
-
-
+    /* Ajuste de título principal */
     .title-coloracion-personal {
         font-size: 3em;
-        margin-left: 50px;
-    }
-
-    .paragraph-coloracion-personal {
-        font-size: 0.8em;
-        margin-left: 50px;
-        width: 90%; /* Ajusta a largura para não "comer" o texto */
-        margin-top: 1px;
-        margin-bottom: 1px;
-    }
-
-    .sub-paragraph-coloracion-personal {
-        font-size: 0.7em;
-        margin-left: 50px;
-        width: 90%; /* Ajusta a largura para não "comer" o texto */
-       
-    }
-
-    .sub-paragraph-coloracion-personal::before{
-        width: 15px;
-        height: 15px;
-        font-size: 12px;
-        line-height: 12px;
-    }
-
-    
-
-
-    .video-container-coloracion-personal {
-        margin-top: 20px;
-        text-align: left; /* Alinha o vídeo à esquerda */
-        margin-left: 50px; /* Retira a margem esquerda */
-    }
-
-    .video-container-coloracion-personal iframe {
-        width: 100%; /* O vídeo vai ocupar toda a largura disponível */
-        max-width: 100%; /* Sem limite de largura */
-        height: auto; /* Ajusta a altura automaticamente */
+        margin-left: 40px;
     }
 
 
-    .sub-titulo-coloracion-personal,
-    .sub-titulo-2-coloracion-personal {
-        margin-left: 50px;
+    .paragraph-coloracion-personal{
+        text-align: left;
         font-size: 1.5em;
+        width: 90%;
+        margin-left: 50px;
     }
 
-    .sub-paragrafo-coloracion-personal {
-        width: 80%;
-        text-align: justify;
+    /* Ajuste de subtítulos */
+    .sub-paragraph-coloracion-personal {
+        font-size: 1.3em;
+        text-align: left;
+        width: 100%;
+        margin-left: 50px;
+
+        
+    }
+
+
+    .sub-titulo-coloracion-personal{
         text-align: left;
         margin-left: 50px;
+        width: 90%;
+    }
+
+
+
+
+
+    .sub-titulo-2-coloracion-personal {
+        font-size: 1.8em;
+        margin-left: 50px;
+        width: 90%;
+        text-align: left;
+    }
+
+    .sub-paragrafo-coloracion-personal{
+        text-align: justify;
+        margin-left: 50px;
+        width: 86%;
+    }
+
+
+
+    #maleta-title{
+    font-size: 1.6em;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 50px;
+    text-align: justify;
+    opacity: 0.9;
+    margin-top: -50px;
+}
+
+
+#maleta-sub-title{
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+    .conteiner-main-precios {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .conteiner-precios {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+   
+
+
+
+.img-grande-resolver-mi-estilo{
+    width: 85%;
+    margin-left: 40px;
+}
+    
+
+    
+}
+
+@media (max-width: 480px) {
+
+
+
+
+    /* Ajuste de título principal */
+    .title-coloracion-personal {
+        font-size: 2em;
+        width: 95%;
+        margin-left: 28px;
+        margin-top: -10px;
+    }
+
+
+    .paragraph-coloracion-personal{
+        font-size: 1.1em;
+        width: 95%;
+        margin-left: 28px;
+        margin-top: 2px;
+    }
+
+    /* Ajuste de subtítulos */
+    .sub-paragraph-coloracion-personal {
         font-size: 1em;
+        text-align: left;
+        width: 100%;
+        margin-left: 28px;
+
+        
+    }
+
+
+    .sub-titulo-coloracion-personal{
+        text-align: justify;
+        margin-left: 50px;
+        width: 90%;
+        font-size: 1.1em;
+      
+    }
+
+
+
+
+
+    .sub-titulo-2-coloracion-personal {
+        font-size: 1.2em;
+        margin-left: 50px;
+        width: 90%;
+        text-align: left;
+    }
+    .img-grande-resolver-mi-estilo{
+    width: 90%;
+    margin-left: 30px;
+}
+ 
+.sub-paragrafo-coloracion-personal{
+        font-size: 1em;
+        width: 88%;
+        margin-left: 50px;
+        text-align: justify;
+    }
+
+
+
+    #maleta-title{
+    font-size: 1.2em;
+    
+}
+
+
+#maleta-sub-title{
+    font-size: 1.1em;
+    
+}
+    
+
+    .container-sub-titulo-coloracion-personal{
+       
+        width: 90%;
     }
 
     .conteiner-main-precios {
@@ -512,176 +613,7 @@ footer {
         margin: 10px 0;
     }
 
-    .title-resolver-mi-estilo{
-    font-size: 1.5em;
-    width: 85%;
-    text-align: justify;
-    margin-left: 50px;
-    
-    
-    
-
 }
-
-
-
-.img-grande-resolver-mi-estilo{
-    width: 85%;
-    margin-left: 40px;
-}
-
-    #paragraph-personal-2{
-        font-size: 0.9em;
-        
-        
-    }
-
-
-    .metedologia-container{
-        margin-left: 20px;
-        margin-top: -30px;
-    }
-
-.metedologia-image {
-        width: 130px;
-        height: 120px;
-    }
-
-
-
-    
-
-    
-
-    .dudas-coloracion-personal-container {
-        font-size: 1.2em;
-        margin-left: 10px;
-    }
-
-    .paragraph-coloracion-personal-dudas {
-        font-size: 0.9em;
-        width: 90%;
-    }
-    
-
-    
-}
-
-@media (max-width: 480px) {
-    .title-coloracion-personal {
-        font-size: 2.3em;
-        margin-left: 50px;
-    }
-
-    .paragraph-coloracion-personal {
-        font-size: 0.8em;
-        margin-left: 50px;
-        width: 90%; /* Ajusta a largura para não "comer" o texto */
-    }
-
-    .sub-paragraph-coloracion-personal {
-        font-size: 0.7em;
-        margin-left: 50px;
-        width: 90%; /* Ajusta a largura para não "comer" o texto */
-    }
-
-    .sub-paragraph-coloracion-personal::before{
-        width: 15px;
-        height: 15px;
-        font-size: 12px;
-        line-height: 12px;
-    }
-
-    .sub-titulo-coloracion-personal,
-    .sub-titulo-2-coloracion-personal {
-        margin-left: 50px;
-        font-size: 1.5em;
-    }
-
-    .sub-paragrafo-coloracion-personal {
-        width: 80%;
-        text-align: justify;
-        text-align: left;
-        margin-left: 50px;
-        font-size: 1em;
-    }
-
-    .conteiner-precios {
-        font-size: 18px;
-        margin: 10px 0;
-    }
-
-    #title-personal-2{
-        font-size: 2.3em;
-        font-weight: lighter;
-        margin-bottom: 15px;
-    }
-
-    #paragraph-personal-2{
-        font-size: 0.9em;
-        
-        
-    }
-
-
-
-    .metedologia-container{
-        margin-left: 20px;
-        margin-top: -30px;
-    }
-
-.metedologia-image {
-        width: 130px;
-        height: 120px;
-    }
-
-    .video-container-coloracion-personal {
-        margin-top: 20px;
-        text-align: left; /* Alinha o vídeo à esquerda */
-        margin-left: 50px; /* Retira a margem esquerda */
-    }
-
-    .video-container-coloracion-personal iframe {
-        width: 100%; /* O vídeo vai ocupar toda a largura disponível */
-        max-width: 100%; /* Sem limite de largura */
-        height: auto; /* Ajusta a altura automaticamente */
-    }
-
-    .metedologia-image {
-        width: 150px;
-        height: 100px;
-    }
-
-    .dudas-coloracion-personal-container {
-        font-size: 1.2em;
-        margin-left: 10px;
-    }
-
-    .paragraph-coloracion-personal-dudas {
-        font-size: 0.9em;
-        width: 90%;
-    }
-
-    .img-grande {
-        margin-left: 0;
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </style>
 </head>
@@ -729,13 +661,12 @@ footer {
         <div class="container-title-coloracion-personal">
             <h1 class="title-coloracion-personal">
 
-                Resolver mi estilo
-
+                Maleta planificada
             </h1>
 
             <p class="paragraph-coloracion-personal">
 
-                <b>DESCUBRE TUS ESTILOS</b> Y VESTE BIEN
+                LOS MEJORES LOOKS PARA TU VIAJE
 
 
             </p>
@@ -743,86 +674,63 @@ footer {
 
             <p class="sub-paragraph-coloracion-personal">
 
-                Asesoría en línea o presencial.
+                Asesoría online o presencial
             </p>
-
-
-
-            <div class="video-container-coloracion-personal">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/loL_LV4WmZs?si=e4cpxOLfem5y8Oxi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-
 
         </div>
 
-
+        <img class="img-grande-resolver-mi-estilo" src="image/outfit/asesoria-de-imagen-y-estilo/mala-desorganizada.jpg" alt="maleta-ordenada">
 
 
         <div class="container-sub-titulo-coloracion-personal">
 
             <h2 class="sub-titulo-coloracion-personal">
-                Es conocido y su mejor versión.
+                Viajar es un placer, pero siempre llega el momento de hacer la maleta.
             </h2>
 
             <h3 class="sub-titulo-2-coloracion-personal">
-                DESCUBRIR TU ESTILO HACE QUE TUS ELECCIONES REFLEJEN QUIÉN ERES.
+                MUCHA INDECISIÓN PARA LA MAYORÍA DE NOSOTROS, ¿NO?
             </h3>
 
 
 
             <p class="sub-paragrafo-coloracion-personal">
 
-                Y lo más genial es entender que nuestros estilos son un reflejo de nuestra crianza, nuestra profesión y nuestro día a día. <br> <br>
+                Y además de acabar consumiendo mucho tiempo, puede resultar estresante no saber qué llevar después de todo, o llevarse todo y más - ¡ni siquiera cabe nada más en tu maleta! Y por eso este encuentro te traerá alivio y placer a la hora de organizar tu maleta de viaje, ya que optimizaremos todo: ¡tu tiempo, espacio y combinaciones de outfits! ¡Ahora puedes centrar toda tu energía en disfrutar del viaje!
+            </p>
 
-En nuestro primer encuentro te presentaremos los 7 estilos universales, entenderemos quién eres y la imagen que quieres retratar y te mostraremos cuánto impacta conocerte a ti mismo en la forma en que te presentas al mundo. Es una inmersión en conocimientos que te ayudarán a comprender mejor tus elecciones y gustos personales y finalmente te dejamos una tarea especial. <br> <br>
 
-En el segundo encuentro, además de analizar juntos la tarea, reflejaremos tus 3 estilos y te presentaremos una propuesta visual, para alinear con tu vida diaria (lo que llamamos estrategia de imagen), además, pensaremos en piezas claves para tu guardarropa, tiendas que reflejen tu estilo y personas en las que puedas inspirarte.
+            <h4 id="maleta-title">
+                ¿Hagamos la maleta juntos de forma ligera y sin crisis?
+            </h4>
+
+
+            <h5 id="maleta-sub-title"> 
+                REUNIÓN
+            </h5>
+
+            <p class="sub-paragrafo-coloracion-personal">
+                ¡Reunión para planificar el look de tu viaje y organizar tu maleta de forma optimizada y práctica!
+
+                Independientemente del destino, crearemos looks con la métrica #resolvameulook para que no tengas que preocuparte por nada más que disfrutar del viaje - y lo mejor: <b>SIN exceso de equipaje.</b>
             </p>
         </div>
 
 
-
-
-            
+        
+        
         <div class="conteiner-main-precios">
             <div class="conteiner-precios">
                 <p><strong>EN LÍNEA</strong></p>
                 <p>Desde</p>
-                <p><strong>US$ 50.00</strong></p>
+                <p><strong>US$ 100.00</strong></p>
                 <a href="https://wa.me/+50255135773" target="_blank"><button class="botao-precios">Agenda ahora!</button></a>
             </div>
         
         </div>
 
 
-
-        <div class="container-title-coloracion-personal">
-            <h1 class="title-resolver-mi-estilo">
-
-                Después de estos encuentros sabrás un poco más de ti y descubrirás la mejor versión de ti mismo.
-
-
-            </h1>
-
-
-                <img class="img-grande-resolver-mi-estilo" src="image/asesoria-de-image/mulher-com-celular-na-mao.jpg" alt="paleta-de-colores-mujer">
-
-                
-
-
-            
         
-          
-
-
-
-
-
-
-
-
-
 
 
         <a href="https://www.instagram.com/celestitch_?igsh=dnU5ZjczNWVkNXhp" target="_blank"><img src="image/icon-footer/instagram.png" alt="instagram-icon" id="imagem-fixada">

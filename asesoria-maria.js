@@ -141,3 +141,58 @@ function toggleAnswer(index) {
     }
 }
 
+
+
+
+// Move a galeria para a esquerda (rolando as imagens para a direita)
+let currentPositionLeft = 0;
+const imageWidth = document.querySelector('.box-img-oscar-2024 .img-oscar-2024').offsetWidth; // Largura de cada imagem
+
+function moveLeft(containerClass) {
+    const imagesContainer = document.querySelector(containerClass);
+    const totalImages = imagesContainer.querySelectorAll('.img-oscar-2024').length; // Número total de imagens
+
+    // A cada clique, a posição é incrementada
+    currentPositionLeft += imageWidth;
+
+    // Se a posição ultrapassar o limite, resetamos
+    if (currentPositionLeft >= totalImages * imageWidth) {
+        currentPositionLeft = 0; // Resetando a posição para a original
+    }
+
+    imagesContainer.style.transition = 'transform 1s ease-in-out'; // Transição suave
+    imagesContainer.style.transform = `translateX(${currentPositionLeft}px)`; // Move para a esquerda
+}
+
+// Move a galeria para a direita (rolando as imagens para a esquerda)
+let currentPositionRight = 0;
+
+function moveRight(containerClass) {
+    const imagesContainer = document.querySelector(containerClass);
+    const totalImages = imagesContainer.querySelectorAll('.img-oscar-2024').length; // Número total de imagens
+
+    // A cada clique, a posição é decrementada
+    currentPositionRight -= imageWidth;
+
+    // Se a posição ultrapassar o limite, resetamos
+    if (currentPositionRight <= -totalImages * imageWidth) {
+        currentPositionRight = 0; // Resetando a posição para a original
+    }
+
+    imagesContainer.style.transition = 'transform 1s ease-in-out'; // Transição suave
+    imagesContainer.style.transform = `translateX(${currentPositionRight}px)`; // Move para a direita
+}
+
+// Abre o lightbox com a imagem clicada
+function openLightbox(image) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-image'); // Ajustado para "lightbox-image"
+    lightboxImg.src = image.src; // Define a imagem no lightbox
+    lightbox.style.display = 'flex'; // Exibe o lightbox
+}
+
+// Fecha o lightbox quando clicado
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none'; // Oculta o lightbox
+}

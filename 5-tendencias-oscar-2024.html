@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tendencia jeans sobre jeans</title>
+    <title>5 Tendencias Oscar 2024 | María Grande</title>
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -33,7 +33,6 @@ body{
     
 }
 
-
 .paragrafo-jeans-sobre-jeans{
     width: 100%;
     font-size: 1.2em;  /* Tamanho da fonte */
@@ -45,49 +44,103 @@ body{
 
 
 
-.mulher-tendencias {
-    position: relative;
+
+
+.slider-container {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo */
-    overflow: hidden; /* Oculta o conteúdo fora do contêiner */
-    margin-bottom: 50px;
-}
-
-.image-container-tendencias {
+    align-items: center;
+    justify-content: center;
     position: relative;
-    width: 100%; /* O contêiner ocupa 100% da largura disponível */
-    height: 400px; /* Defina uma altura fixa para todas as imagens */
+    width: 100%; /* Ajuste conforme necessário */
     overflow: hidden;
+    margin: 0 auto;
+}
+
+.box-img-oscar-2024 {
+    display: flex;
+    transition: transform 0.5s ease; /* Suavizar o movimento */
+    gap: 10px;
+}
+
+
+.outro-container {
+    display: flex; /* Exibe as imagens em linha */
+    gap: 10px; /* Espaço entre as imagens, pode ajustar conforme necessário */
+}
+
+
+.outro-container-3 {
+    display: flex;  /* Exibe as imagens em linha */
+    gap: 10px;      /* Espaço entre as imagens */
+}
+
+
+.img-oscar-2024 {
+    width: 300px; /* Tamanho fixo para cada imagem */
+    height: 400px;
     object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 30px;
+    
 }
 
-
-.tendencias-img {
-    width: 150%; /* Aumenta a largura da imagem para 150% do tamanho do contêiner */
-    height: 100%; /* Garantindo que a altura seja 100% do contêiner */
-    object-fit: cover; /* Preenche o espaço sem distorcer a imagem */
-    transition: transform 0.5s ease-in-out; /* Transição suave */
-}
-
-.seta {
+/* Estilo das setas */
+.arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 30px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 40px; /* Tamanho da seta */
+    color: rgba(0, 0, 0, 0.6); /* Cor das setas */
     cursor: pointer;
     z-index: 10;
 }
 
-.seta-direita {
+/* Posição da seta à esquerda */
+.arrow-left {
+    left: 10px;
+}
+
+/* Posição da seta à direita */
+.arrow-right {
     right: 10px;
 }
 
-.seta-esquerda {
-    left: 10px;
+/* Efeito de aumentar na seta */
+.arrow:hover {
+    color: rgba(0, 0, 0, 0.8); /* Cor mais escura ao passar o mouse */
 }
+
+/* Estilo do Lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#lightbox-image {
+    max-width: 90%;    /* Limita a largura da imagem para 90% da largura da tela */
+    max-height: 90%;   /* Limita a altura da imagem para 90% da altura da tela */
+    object-fit: contain; /* Ajusta a imagem para caber no lightbox sem distorção */
+}
+
+
+
+
+
+
+
+
+
+
 
 
  /* Estilos para responsividade */
@@ -206,7 +259,8 @@ body{
 
     .image-container-tendencias{
         width: 500px;
-        height: 290px;
+        height: 300px;
+        object-fit: cover;
     }
 
 
@@ -301,69 +355,98 @@ body{
         <div class="main-consejos">
             <div class="text-content">
                 <h1 class="tendencia-jeans-h1">
-                    Descubriendo la tendencia jeans sobre jeans.
+                    5 tendencias en la alfombra roja de los Oscar 2024
                 </h1>
                 
                 <p class="paragrafo-jeans-sobre-jeans" >
-                    ¿Alguna vez te has encontrado pensando en cómo usar jeans con jeans y tenías miedo de armar outfits? Si es así, ¡es hora de dejar ese prejuicio a un lado y lanzarse a esta tendencia que es popular cada temporada! Después de todo, los jeans son una prenda democrática y merecen un espacio especial en tu armario. <br> <br>
-
-                    Al combinar dos piezas de mezclilla, es importante tener cuidado de no caer en la misma. Un consejo valioso es invertir en diferentes accesorios, como zapatos y bolsos coloridos, para darle ese toque especial a tu look. <br> <br>
-
-                    Intente combinar diferentes lavados de jeans y cambiar los diseños de las piezas para crear looks interesantes y únicos. ¿Qué tal optar por un crop top moderno con pantalones de campana, unos shorts con camisas o descubrir modelos con cortes y formas innovadores?
+                    Como es costumbre, las celebridades guardaron sus mejores looks para la alfombra roja de los Oscar 2024. El resultado fue una alfombra con una amplia gama de tendencias, desde metalizados de pies a cabeza hasta visionarios conjuntos vintage sacados de las profundidades del baúl. En otras palabras, las principales estrellas de Hollywood ofrecieron un festín de moda para todos los gustos estéticos. <br> <br>
 
 
+                    El vestido Armani Privé de Lupita Nyong'o, el impresionante vestido de Carolina Herrera de Gabrielle Union y el vestido Balenciaga personalizado de Michelle Yeoh estuvieron entre los looks brillantes que se exhibieron durante una noche elegante, aunque algo conservadora, de moda en la alfombra roja. <br> <br>
+
+
+                    A continuación, puedes descubrir conmigo cinco tendencias de la alfombra roja de los Oscar 2024 que todas llevaremos pronto.
                 </p>
             
                 <h2 class="title-consejos-sub">
-                    Falda y camisa
+                    1- Siluetas peplum (pliegue o volante situado en la cadera o final de la cintura)
                 </h2>
-            
-                
 
 
-                <div class="mulher-tendencias">
-                    <div class="image-container-tendencias">
-                        <img class="tendencias-img primeira-imagem" src="image/outfit/mulher-uma-lado-da-outra.jpg" alt="">
-                        <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('primeira')">&#8592;</div>
-                        <div class="seta seta-direita" onclick="rolarImagemDireita('primeira')">&#8594;</div>
+                <div class="slider-container">
+                    <button class="arrow arrow-left" onclick="moveLeft('.box-img-oscar-2024')">&#10094;</button>
+                    <div class="box-img-oscar-2024">
+                        <img src="image/outfit/oscar-2024/silhuetas-de-peplum-img-1.jpg" alt="" class="img-oscar-2024" onclick="openLightbox(this)">
+                        <img src="image/outfit/oscar-2024/silhuetas-de-peplum-img-2.jpg" alt="" class="img-oscar-2024" onclick="openLightbox(this)">
+                        <img src="image/outfit/oscar-2024/silhuetas-de-peplum-img-3.jpg" alt="" class="img-oscar-2024" onclick="openLightbox(this)">
                     </div>
+                    <button class="arrow arrow-right" onclick="moveRight('.box-img-oscar-2024')">&#10095;</button>
                 </div>
                 
+
+
+               
+                
                 <p class="paragrafo-jeans-sobre-jeans">
-                    Dependiendo del largo de la falda, puedes usarla incluso para eventos más formales. Invierte en estilos de faldas midi para una apariencia elegante y complétalas con tacones altos, collares largos o accesorios de mezclilla para darle un toque extra de estilo.
+                    La silueta peplum se ha renovado para 2024 y las celebridades (incluida la ganadora del Oscar Emma Stone) la están adoptando. Compuestos de telas estructuradas, estos diseños elevados añaden un elemento escultórico a una prenda, lo que los hace ideales para atuendos en la alfombra roja. Esta temporada, la tendencia está lista para trascender la alfombra roja, habiendo aparecido en las pasarelas primavera-verano 2024 de Albera Ferretti y Erdem. Ya distribuidos en algunas de nuestras marcas favoritas, predecimos un resurgimiento del peplum esta temporada.
                 </p><br>
                 
                 <h2 class="title-consejos-sub">
-                    Vestido Jeans
+                    2- Lazos
                 </h2>
-                
-                <div class="mulher-tendencias">
-                    <div class="image-container-tendencias">
-                        <img class="tendencias-img segunda-imagem" src="image/outfit/mulher-vestido-jeans-juntas.jpg" alt="">
-                        <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('segunda')">&#8592;</div>
-                        <div class="seta seta-direita" onclick="rolarImagemDireita('segunda')">&#8594;</div>
+
+
+                <div class="slider-container">
+                    <button class="arrow arrow-left" onclick="moveLeft('.outro-container')">&#10094;</button>
+                    <div class="outro-container">
+                        <img src="image/outfit/oscar-2024/lazos-img-1.jpg" alt="" class="img-oscar-2024" onclick="openLightbox(this)">
+                        <img src="image/outfit/oscar-2024/lazos-img-2.jpg" alt="" class="img-oscar-2024" onclick="openLightbox(this)">
+                        <img src="image/outfit/oscar-2024/lazos-img-3.jpg" alt="" class="img-oscar-2024" onclick="openLightbox(this)">
                     </div>
+                    
+                    <button class="arrow arrow-right" onclick="moveRight('.outro-container')">&#10095;</button>
                 </div>
+                
+                <!-- Lightbox -->
+                <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                    <img id="lightbox-image" src="" alt="Imagem em destaque">
+                </div>
+                
+                
+                
+                <p class="paragrafo-jeans-sobre-jeans">
+
+                    Hemos estado observando la tendencia de los accesorios de lazo saturar las calles de la ciudad durante el Mes de la Moda, por lo que un guiño a la creciente tendencia en la alfombra roja de los Oscar anoche se sintió natural. Apareciendo en diseños sutiles (y no tan sutiles), la tendencia del lazo adornaba hermosos vestidos en general.
+            </p>
+                       
+               
                 
                 <h2 class="title-consejos-sub">
-                    Chaquetas vaqueras
+                    3- Vestidos con hombros descubiertos
                 </h2>
-                
-                <div class="mulher-tendencias">
-                    <div class="image-container-tendencias">
-                        <img class="tendencias-img terceira-imagem" src="image/outfit/mulher-jaqueta-jeans-juntas.jpg" alt="">
-                        <div class="seta seta-esquerda" onclick="rolarImagemEsquerda('terceira')">&#8592;</div>
-                        <div class="seta seta-direita" onclick="rolarImagemDireita('terceira')">&#8594;</div>
+
+
+
+                <div class="slider-container">
+                    <!-- Botão da seta esquerda para a terceira galeria -->
+                    <button class="arrow arrow-left" onclick="moveLeft('.outro-container-3')">&#10094;</button>
+                    
+                    <div class="outro-container outro-container-3">
+                        <img src="image/outfit/oscar-2024/vestidos-ombros-descobiertos-1.jpg" alt="" class="img-oscar-2024" onclick="openLightbox(this)">
+                        <img src="image/outfit/oscar-2024/vestidos-ombros-descobiertos-2.jpg" alt="" class="img-oscar-2024" onclick="openLightbox(this)">
+                        <img src="image/outfit/oscar-2024/vestidos-ombros-descobiertos-3.jpg" alt="" class="img-oscar-2024" onclick="openLightbox(this)">
                     </div>
+                    
+                    <!-- Botão da seta direita para a terceira galeria -->
+                    <button class="arrow arrow-right" onclick="moveRight('.outro-container-3')">&#10095;</button>
                 </div>
                 
                 
+                
+                
 
-            <p class="paragrafo-jeans-sobre-jeans">
-
-                Clásicas y versátiles, las chaquetas vaqueras son imprescindibles en cualquier armario. Intente combinarlo con sus jeans favoritos para una apariencia casual y relajada.
-            </p>
-            <br>
+            
+            
 
             <h2 class="title-consejos-sub">
                 Chalecos de mezclilla
